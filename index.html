@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ADCO Arquitectos</title>
+<meta name="description" content="ADCO Arquitectos: diseño, construcción y remodelación de casas, hospedaje, salud y obra pública en la Ciudad de México y Morelos.">
+<link rel="canonical" href="https://guzmansyhair-a11y.github.io/adco-arquitectos/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ADCO Arquitectos · Diseño, construcción y remodelación">
+<meta property="og:description" content="Obras de vivienda, hospedaje, salud y obra pública en la Ciudad de México y Morelos.">
+<meta property="og:url" content="https://guzmansyhair-a11y.github.io/adco-arquitectos/">
+<meta property="og:image" content="https://guzmansyhair-a11y.github.io/adco-arquitectos/img/compartir.jpg">
+<meta property="og:locale" content="es_MX">
+<meta name="theme-color" content="#0F1C2E">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"GeneralContractor","name":"ADCO Arquitectos","legalName":"Corporativo de Servicios en Arquitectura y Construcción ADCO, S.A. de C.V.","url":"https://guzmansyhair-a11y.github.io/adco-arquitectos/","logo":"https://guzmansyhair-a11y.github.io/adco-arquitectos/img/logo-adco-azul.png","image":"https://guzmansyhair-a11y.github.io/adco-arquitectos/img/compartir.jpg","telephone":"+52 777 511 4267","email":"alonzo@adcoarquitectos.com","address":{"@type":"PostalAddress","streetAddress":"Prolongación Miguel Hidalgo 198, Col. Chamilpa","addressLocality":"Cuernavaca","addressRegion":"Morelos","postalCode":"62210","addressCountry":"MX"},"areaServed":["Ciudad de México","Morelos"]}</script>
+<style>
+:root {
+  /* Retícula de 12 columnas · índice tipográfico de obras con vista previa fija · corte diagonal del logotipo ADCO en fotos y bandas */
+  --tinta: #0F1C2E;
+  --acero: #3F5B7C;
+  --niebla: #AFC1D3;
+  --piedra: #F1F1ED;
+  --papel: #FFFFFF;
+  --gris: #4A5462;
+  --regla: #D6D9DC;
+  --display: "Cormorant Garamond", Cambria, Georgia, "Times New Roman", serif;
+  --texto: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --ancho: 1240px;
+  --margen: clamp(1.1rem, 4vw, 2.75rem);
+  --corte: polygon(0 0, 100% 0, 100% 100%, 26% 100%, 0 90%);
+  color-scheme: light;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 5.5rem; -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--piedra); color: var(--tinta); font: 400 1.0625rem/1.6 var(--texto); }
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; }
+h1, h2, h3 { font-family: var(--display); font-weight: 600; line-height: 1.04; letter-spacing: -0.01em; margin: 0; text-wrap: balance; font-variant-numeric: lining-nums; }
+p { margin: 0; }
+:focus-visible { outline: 2px solid var(--acero); outline-offset: 3px; }
+.saltar { position: absolute; left: -999px; top: 0; background: var(--tinta); color: var(--papel); padding: .6rem 1rem; z-index: 50; }
+.saltar:focus { left: 1rem; top: 1rem; }
+.contenedor { width: 100%; max-width: var(--ancho); margin: 0 auto; padding: 0 var(--margen); }
+.ceja { font: 600 .75rem/1.2 var(--texto); letter-spacing: .18em; text-transform: uppercase; color: var(--acero); }
+.boton { display: inline-flex; align-items: center; gap: .55rem; padding: .85rem 1.35rem; border-radius: 2px; font: 600 .95rem/1 var(--texto); text-decoration: none; border: 1px solid var(--tinta); transition: background .2s, color .2s, border-color .2s; }
+.boton-lleno { background: var(--tinta); color: var(--papel); }
+.boton-lleno:hover { background: var(--acero); border-color: var(--acero); }
+.boton-linea { color: var(--tinta); }
+.boton-linea:hover { background: var(--tinta); color: var(--papel); }
+
+/* ---------- encabezado */
+.encabezado { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--piedra) 92%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--regla); }
+.encabezado .contenedor { display: flex; align-items: center; gap: 1.5rem; min-height: 4.6rem; }
+.marca { display: flex; align-items: center; gap: .8rem; text-decoration: none; margin-right: auto; }
+.marca img { height: 52px; width: auto; }
+.marca-texto { font: 600 1.05rem/1.1 var(--texto); letter-spacing: .02em; }
+.marca-texto small { display: block; font-weight: 400; font-size: .78rem; color: var(--gris); letter-spacing: .04em; }
+.menu { display: flex; gap: 1.6rem; list-style: none; margin: 0; padding: 0; }
+.menu a { text-decoration: none; font-weight: 500; font-size: .95rem; padding: .3rem 0; border-bottom: 1px solid transparent; }
+.menu a:hover { border-color: var(--tinta); }
+.encabezado .boton { padding: .65rem 1rem; font-size: .88rem; }
+
+/* ---------- portada */
+.portada { padding: clamp(2.5rem, 6vw, 5rem) 0 clamp(2.5rem, 5vw, 4rem); }
+.portada .contenedor { display: grid; grid-template-columns: repeat(12, 1fr); gap: 0 clamp(1rem, 3vw, 2.5rem); align-items: end; }
+.portada-texto { grid-column: 1 / span 6; display: grid; gap: 1.5rem; padding-bottom: .5rem; }
+.portada h1 { font-size: clamp(2.9rem, 6.4vw, 5.6rem); }
+.portada h1 em { font-style: italic; font-weight: 500; color: var(--acero); }
+.portada-lead { font-size: 1.15rem; color: var(--gris); max-width: 34rem; }
+.acciones { display: flex; flex-wrap: wrap; gap: .8rem; }
+.portada-foto { grid-column: 7 / span 6; margin: 0; }
+.portada-foto img { width: 100%; aspect-ratio: 4 / 4.4; object-fit: cover; clip-path: var(--corte); }
+.portada-foto figcaption { margin-top: .7rem; font-size: .85rem; color: var(--gris); text-align: right; }
+.datos { list-style: none; margin: clamp(2rem, 4vw, 3rem) 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--tinta); }
+.datos li { padding: 1rem 1.2rem 0 0; display: grid; gap: .25rem; }
+.datos strong { font: 600 .72rem/1.2 var(--texto); letter-spacing: .16em; text-transform: uppercase; color: var(--acero); }
+.datos span { font-size: .98rem; }
+
+/* ---------- secciones */
+.seccion { padding: clamp(3.5rem, 8vw, 6.5rem) 0; }
+.seccion-cabeza { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1rem clamp(1rem, 3vw, 2.5rem); margin-bottom: clamp(2rem, 4vw, 3rem); align-items: end; }
+.seccion-cabeza > div { grid-column: 1 / span 7; display: grid; gap: 1rem; }
+.seccion-cabeza h2 { font-size: clamp(2.3rem, 4.4vw, 3.6rem); }
+.seccion-cabeza > p { grid-column: 8 / span 5; color: var(--gris); max-width: 32rem; }
+
+/* ---------- obras: índice tipográfico */
+.obras { background: var(--papel); border-top: 1px solid var(--regla); border-bottom: 1px solid var(--regla); }
+.filtros { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.5rem; }
+.filtro { font: 500 .9rem/1 var(--texto); padding: .6rem .9rem; border: 1px solid var(--regla); background: transparent; color: var(--tinta); border-radius: 999px; cursor: pointer; }
+.filtro:hover { border-color: var(--tinta); }
+.filtro[aria-pressed="true"] { background: var(--tinta); border-color: var(--tinta); color: var(--papel); }
+.filtro-n { font-variant-numeric: tabular-nums; opacity: .7; margin-left: .2rem; }
+.obras-cuerpo { display: grid; grid-template-columns: repeat(12, 1fr); gap: 0 clamp(1rem, 3vw, 2.5rem); align-items: start; }
+.indice { grid-column: 1 / span 7; list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--tinta); }
+.fila { border-bottom: 1px solid var(--regla); }
+.fila[hidden] { display: none; }
+.fila-enlace { display: grid; grid-template-columns: 3.2rem 1fr auto; align-items: center; gap: 1rem; padding: 1.15rem .25rem; text-decoration: none; transition: background .2s; }
+.fila-num { font: 600 .8rem/1 var(--texto); letter-spacing: .1em; color: var(--acero); font-variant-numeric: tabular-nums; }
+.fila-cuerpo { display: grid; gap: .3rem; }
+.fila-nombre { font: 500 clamp(1.6rem, 2.7vw, 2.3rem)/1.05 var(--display); font-variant-numeric: lining-nums; transition: transform .25s ease; }
+.fila-meta { font-size: .9rem; color: var(--gris); }
+.fila-mini { display: none; }
+.fila-flecha { font-size: 1.3rem; color: var(--acero); opacity: 0; transform: translateX(-6px); transition: opacity .2s, transform .2s; }
+.fila-enlace:hover, .fila-enlace:focus-visible, .fila.activa .fila-enlace { background: var(--piedra); }
+.fila-enlace:hover .fila-nombre, .fila.activa .fila-nombre { transform: translateX(6px); }
+.fila-enlace:hover .fila-flecha, .fila-enlace:focus-visible .fila-flecha, .fila.activa .fila-flecha { opacity: 1; transform: none; }
+.vista { grid-column: 8 / span 5; position: sticky; top: 6.5rem; margin: 0; }
+.vista img { width: 100%; aspect-ratio: 4 / 3.3; object-fit: cover; clip-path: var(--corte); background: var(--piedra); transition: opacity .25s; }
+.vista figcaption { display: grid; gap: .2rem; margin-top: .9rem; }
+.vista-sector { font: 600 .72rem/1.2 var(--texto); letter-spacing: .16em; text-transform: uppercase; color: var(--acero); }
+.vista-texto { font-size: .95rem; color: var(--gris); }
+
+/* ---------- servicios */
+.servicios-lista { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 clamp(1.5rem, 4vw, 3.5rem); }
+.servicios-lista li { border-top: 1px solid var(--tinta); padding: 1.3rem 0 2rem; display: grid; grid-template-columns: 3rem 1fr; gap: .4rem 1rem; }
+.servicios-lista .n { font: 600 .8rem/1.6 var(--texto); color: var(--acero); letter-spacing: .1em; grid-row: span 2; }
+.servicios-lista h3 { font-size: 1.85rem; }
+.servicios-lista p { color: var(--gris); max-width: 30rem; }
+.eco { margin-top: clamp(2rem, 4vw, 3rem); background: var(--papel); border: 1px solid var(--regla); padding: clamp(1.4rem, 3vw, 2.2rem); display: grid; gap: 1.4rem; }
+.eco-cabeza { display: flex; flex-wrap: wrap; gap: .5rem 2rem; align-items: baseline; justify-content: space-between; }
+.eco-cabeza h3 { font-size: 1.85rem; }
+.eco-cabeza p { color: var(--gris); font-size: .95rem; }
+.eco ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem 1.6rem; }
+.eco li { display: grid; gap: .25rem; border-top: 1px solid var(--regla); padding-top: .8rem; }
+.eco li strong { font-weight: 600; font-size: .98rem; }
+.eco li span { color: var(--gris); font-size: .9rem; line-height: 1.5; }
+
+/* ---------- proceso */
+.proceso { background: var(--tinta); color: var(--papel); }
+.proceso .ceja { color: var(--niebla); }
+.proceso .seccion-cabeza > p { color: var(--niebla); }
+.pasos { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(1rem, 2.5vw, 2rem); counter-reset: paso; }
+.pasos li { border-left: 1px solid rgba(175, 193, 211, .45); padding: 0 0 0 1.2rem; display: grid; gap: .6rem; align-content: start; }
+.pasos .n { font: 500 3.4rem/1 var(--display); font-variant-numeric: lining-nums; color: var(--niebla); }
+.pasos h3 { font-size: 1.7rem; }
+.pasos p { color: #D5DEE8; font-size: .97rem; }
+.proceso-nota { margin-top: clamp(2rem, 4vw, 3rem); display: grid; grid-template-columns: repeat(12, 1fr); gap: 0 clamp(1rem, 3vw, 2.5rem); align-items: center; }
+.proceso-nota figure { grid-column: 1 / span 5; margin: 0; }
+.proceso-nota img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; clip-path: var(--corte); }
+.proceso-nota p { grid-column: 7 / span 6; font: italic 500 clamp(1.5rem, 2.6vw, 2.1rem)/1.25 var(--display); color: var(--papel); }
+
+/* ---------- nosotros */
+.nosotros-cuerpo { display: grid; grid-template-columns: repeat(12, 1fr); gap: 2rem clamp(1rem, 3vw, 2.5rem); align-items: start; }
+.nosotros-texto { grid-column: 1 / span 7; display: grid; gap: 2rem; }
+.nosotros-lead { font: 500 clamp(1.5rem, 2.4vw, 2rem)/1.3 var(--display); }
+.mision { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 2rem; }
+.mision div { border-top: 1px solid var(--tinta); padding-top: 1rem; display: grid; gap: .5rem; }
+.mision p { color: var(--gris); }
+.nosotros-foto { grid-column: 9 / span 4; margin: 0; }
+.nosotros-foto img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; clip-path: var(--corte); }
+.nosotros-foto figcaption { margin-top: .7rem; font-size: .85rem; color: var(--gris); }
+
+/* ---------- contacto */
+.contacto { background: var(--tinta); color: var(--papel); clip-path: polygon(0 0, 100% 2.5rem, 100% 100%, 0 100%); padding-top: clamp(5rem, 9vw, 7.5rem); }
+.contacto .ceja { color: var(--niebla); }
+.contacto-cuerpo { display: grid; grid-template-columns: repeat(12, 1fr); gap: 2.5rem clamp(1rem, 3vw, 2.5rem); }
+.contacto-datos { grid-column: 1 / span 5; display: grid; gap: 1.6rem; align-content: start; }
+.contacto h2 { font-size: clamp(2.4rem, 4.6vw, 3.8rem); }
+.contacto-datos > p { color: var(--niebla); font-size: 1.05rem; }
+.contacto dl { margin: 0; display: grid; gap: 1rem; }
+.contacto dt { font: 600 .72rem/1.2 var(--texto); letter-spacing: .16em; text-transform: uppercase; color: var(--niebla); }
+.contacto dd { margin: .3rem 0 0; font-size: 1.05rem; }
+.contacto dd a { text-decoration-color: rgba(255,255,255,.35); text-underline-offset: 4px; }
+.formulario { grid-column: 7 / span 6; background: var(--papel); color: var(--tinta); padding: clamp(1.4rem, 3vw, 2.2rem); display: grid; gap: 1rem; align-content: start; }
+.formulario h3 { font-size: 1.9rem; }
+.formulario p { color: var(--gris); font-size: .95rem; }
+.campo { display: grid; gap: .35rem; }
+.campo label { font: 600 .78rem/1.2 var(--texto); letter-spacing: .08em; text-transform: uppercase; color: var(--gris); }
+.campo input, .campo select, .campo textarea { font: 400 1rem/1.4 var(--texto); color: var(--tinta); background: var(--piedra); border: 1px solid var(--regla); border-radius: 2px; padding: .75rem .85rem; width: 100%; }
+.campo textarea { min-height: 7rem; resize: vertical; }
+.campo input:focus, .campo select:focus, .campo textarea:focus { outline: 2px solid var(--acero); outline-offset: 1px; border-color: var(--acero); }
+.formulario .boton { justify-content: center; }
+.pie { background: var(--tinta); color: var(--niebla); border-top: 1px solid rgba(175,193,211,.25); }
+.pie .contenedor { display: flex; flex-wrap: wrap; align-items: center; gap: 1.2rem 2rem; padding-top: 2rem; padding-bottom: 2rem; font-size: .85rem; }
+.pie img { height: 64px; width: auto; }
+.pie p:last-child { margin-left: auto; }
+
+/* ---------- ficha de obra (diálogo) */
+dialog.ficha { width: min(1120px, 100% - 2rem); max-height: calc(100% - 2rem); padding: 0; border: 0; background: var(--papel); color: var(--tinta); overflow: auto; }
+dialog.ficha::backdrop { background: rgba(15, 28, 46, .72); }
+.ficha-barra { position: sticky; top: 0; z-index: 2; display: flex; align-items: center; gap: 1rem; padding: .9rem clamp(1.1rem, 3vw, 2rem); background: var(--papel); border-bottom: 1px solid var(--regla); }
+.ficha-barra .ceja { margin-right: auto; }
+.icono { font: 500 1rem/1 var(--texto); background: transparent; border: 1px solid var(--regla); color: var(--tinta); padding: .55rem .8rem; cursor: pointer; border-radius: 2px; }
+.icono:hover { border-color: var(--tinta); }
+.ficha-cuerpo { padding: clamp(1.4rem, 3vw, 2.4rem) clamp(1.1rem, 3vw, 2rem) 2rem; display: grid; gap: 1.6rem; }
+.ficha-cuerpo h3 { font-size: clamp(2.2rem, 4.4vw, 3.4rem); }
+.ficha-desc { font-size: 1.1rem; color: var(--gris); max-width: 46rem; }
+.ficha-datos { margin: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem 1.5rem; border-top: 1px solid var(--tinta); padding-top: 1rem; }
+.ficha-datos dt { font: 600 .7rem/1.2 var(--texto); letter-spacing: .16em; text-transform: uppercase; color: var(--acero); }
+.ficha-datos dd { margin: .3rem 0 0; font-size: .97rem; }
+.galeria { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; }
+.galeria figure { margin: 0; display: grid; gap: .55rem; align-content: start; }
+.galeria img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--piedra); }
+.galeria figcaption { display: grid; gap: .15rem; }
+.galeria figcaption strong { font: 600 .7rem/1.2 var(--texto); letter-spacing: .16em; text-transform: uppercase; color: var(--acero); }
+.galeria figcaption span { font-size: .93rem; color: var(--gris); }
+.ficha-nav { display: flex; justify-content: space-between; gap: 1rem; border-top: 1px solid var(--regla); padding: 1rem clamp(1.1rem, 3vw, 2rem) 1.4rem; }
+.ficha-nav button { font: 500 .95rem/1.3 var(--texto); background: none; border: 0; color: var(--tinta); cursor: pointer; padding: .4rem 0; text-align: left; }
+.ficha-nav button:last-child { text-align: right; }
+.ficha-nav small { display: block; font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--acero); font-weight: 600; }
+
+/* ---------- pantallas medianas y celular */
+@media (max-width: 1080px) {
+  .menu { display: none; }
+}
+@media (max-width: 900px) {
+  .portada-texto, .portada-foto { grid-column: 1 / -1; }
+  .portada-foto { margin-top: 2rem; }
+  .seccion-cabeza > div, .seccion-cabeza > p { grid-column: 1 / -1; }
+  .indice { grid-column: 1 / -1; }
+  .vista { display: none; }
+  .fila-enlace { grid-template-columns: 2.4rem 1fr 5.5rem; }
+  .fila-mini { display: block; width: 5.5rem; aspect-ratio: 1; object-fit: cover; grid-column: 3; grid-row: 1; }
+  .fila-flecha { display: none; }
+  .servicios-lista { grid-template-columns: 1fr; }
+  .eco ul { grid-template-columns: repeat(2, 1fr); }
+  .pasos { grid-template-columns: repeat(2, 1fr); row-gap: 2rem; }
+  .proceso-nota figure, .proceso-nota p { grid-column: 1 / -1; }
+  .proceso-nota p { margin-top: 1.5rem; }
+  .nosotros-texto, .nosotros-foto { grid-column: 1 / -1; }
+  .nosotros-foto { max-width: 26rem; }
+  .contacto-datos, .formulario { grid-column: 1 / -1; }
+  .ficha-datos { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .marca-texto small { display: none; }
+  .encabezado .boton span { display: none; }
+  .datos { grid-template-columns: 1fr; }
+  .datos li { padding: .9rem 0; border-bottom: 1px solid var(--regla); }
+  .eco ul, .pasos, .mision, .galeria { grid-template-columns: 1fr; }
+  .pie p:last-child { margin-left: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}
+</style>
+</head>
+<body>
+<a class="saltar" href="#obras">Ir a las obras</a>
+
+<header class="encabezado">
+  <div class="contenedor">
+    <a class="marca" href="#inicio" aria-label="ADCO Arquitectos, inicio">
+      <img src="img/logo-adco-azul.png" width="134" height="240" alt="Logotipo de ADCO architecture &amp; design">
+      <span class="marca-texto">ADCO Arquitectos<small>Diseño y construcción</small></span>
+    </a>
+    <nav aria-label="Secciones">
+      <ul class="menu">
+        <li><a href="#obras">Obras</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proceso">Cómo trabajamos</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <a class="boton boton-lleno" href="https://wa.me/527775114267" rel="noopener">WhatsApp <span>(777) 511-42-67</span></a>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="portada" aria-labelledby="titulo-portada">
+    <div class="contenedor">
+      <div class="portada-texto">
+        <p class="ceja">Arquitectura y construcción · CDMX y Morelos</p>
+        <h1 id="titulo-portada">Diseñamos, construimos y <em>remodelamos</em>.</h1>
+        <p class="portada-lead">Casas, hospedaje, hospitales y espacios públicos: del anteproyecto a la entrega de la obra, con supervisión en sitio y reporte de avance para cada cliente.</p>
+        <div class="acciones">
+          <a class="boton boton-lleno" href="https://wa.me/527775114267" rel="noopener">Cotizar por WhatsApp</a>
+          <a class="boton boton-linea" href="#obras">Ver obras</a>
+        </div>
+      </div>
+      <figure class="portada-foto">
+        <img src="img/portada-inicio.jpg" width="1400" height="787" alt="Estancia principal del Albergue Alpino Ajusco con iluminación LED en las vigas y chimenea central" fetchpriority="high">
+        <figcaption>Albergue Alpino Ajusco · iluminación LED en la estancia principal</figcaption>
+      </figure>
+      <ul class="datos" style="grid-column: 1 / -1;">
+        <li><strong>Zona de trabajo</strong><span>Ciudad de México y Morelos</span></li>
+        <li><strong>Alcance</strong><span>Del anteproyecto a la entrega</span></li>
+        <li><strong>Seguimiento</strong><span>Bitácora y reporte fotográfico en cada obra</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="seccion obras" id="obras" aria-labelledby="titulo-obras">
+    <div class="contenedor">
+      <div class="seccion-cabeza">
+        <div>
+          <p class="ceja">Obras</p>
+          <h2 id="titulo-obras">Obras y proyectos</h2>
+        </div>
+        <p>Una selección de trabajos en vivienda, hospedaje, salud y obra pública. Abra cada obra para ver el proceso y el resultado.</p>
+      </div>
+      <div class="filtros" role="group" aria-label="Filtrar obras por sector"><button type="button" class="filtro" data-filtro="todas" aria-pressed="true">Todas <span class="filtro-n">10</span></button><button type="button" class="filtro" data-filtro="vivienda" aria-pressed="false">Vivienda <span class="filtro-n">4</span></button><button type="button" class="filtro" data-filtro="hospedaje" aria-pressed="false">Hospedaje <span class="filtro-n">1</span></button><button type="button" class="filtro" data-filtro="publica" aria-pressed="false">Obra pública y salud <span class="filtro-n">4</span></button><button type="button" class="filtro" data-filtro="diseno" aria-pressed="false">Diseño <span class="filtro-n">1</span></button></div>
+      <div class="obras-cuerpo">
+        <ol class="indice">
+          <li class="fila" data-sector="publica">
+            <a class="fila-enlace" href="#albergue-ajusco" data-id="albergue-ajusco">
+              <span class="fila-num">01</span>
+              <span class="fila-cuerpo">
+                <span class="fila-nombre">Albergue Alpino Ajusco</span>
+                <span class="fila-meta">Rehabilitación de albergue y cabañas <span aria-hidden="true">·</span> Parque Natural Volcán Ajusco, CDMX</span>
+              </span>
+              <img class="fila-mini" src="img/albergue-ajusco-mini.jpg" width="360" height="202" alt="" loading="lazy" decoding="async">
+              <span class="fila-flecha" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="fila" data-sector="vivienda">
+            <a class="fila-enlace" href="#casa-su-03" data-id="casa-su-03">
+              <span class="fila-num">02</span>
+              <span class="fila-cuerpo">
+                <span class="fila-nombre">Casa SU-03</span>
+                <span class="fila-meta">Diseño y construcción de casa habitación <span aria-hidden="true">·</span> Jiutepec, Morelos</span>
+              </span>
+              <img class="fila-mini" src="img/casa-su-03-mini.jpg" width="360" height="334" alt="" loading="lazy" decoding="async">
+              <span class="fila-flecha" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="fila" data-sector="vivienda">
+            <a class="fila-enlace" href="#casa-aj8" data-id="casa-aj8">
+              <span class="fila-num">03</span>
+              <span class="fila-cuerpo">
+                <span class="fila-nombre">Casa AJ8</span>
+                <span class="fila-meta">Remodelación integral de casa habitación <span aria-hidden="true">·</span> Cuernavaca, Morelos</span>
+              </span>
+              <img class="fila-mini" src="img/casa-aj8-mini.jpg" width="360" height="179" alt="" loading="lazy" decoding="async">
+              <span class="fila-flecha" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="fila" data-sector="hospedaje">
+            <a class="fila-enlace" href="#hotel-casa-fernanda" data-id="hotel-casa-fernanda">
+              <span class="fila-num">04</span>
+              <span class="fila-cuerpo">
+                <span class="fila-nombre">Hotel Casa Fernanda</span>
+                <span class="fila-meta">Proyecto de hospitalidad <span aria-hidden="true">·</span> Tepoztlán, Morelos</span>
+              </span>
+              <img class="fila-mini" src="img/hotel-casa-fernanda-mini.jpg" width="360" height="333" alt="" loading="lazy" decoding="async">
+              <span class="fila-flecha" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="fila" data-sector="vivienda">
+            <a class="fila-enlace" href="#casa-atlamaya" data-id="casa-atlamaya">
+              <span class="fila-num">05</span>
+              <span class="fila-cuerpo">
+                <span class="fila-nombre">Casa Atlamaya</span>
+                <span class="fila-meta">Diseño y remodelación de vivienda existente <span aria-hidden="true">·</span> Ciudad de México</span>
+              </span>
+              <img class="fila-mini" src="img/casa-atlamaya-mini.jpg" width="360" height="270" alt="" loading="lazy" decoding="async">
+              <span class="fila-flecha" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="fila" data-sector="publica">
+            <a class="fila-enlace" href="#verificentro" data-id="verificentro">
+              <span class="fila-num">06</span>
+              <span class="fila-cuerpo">
+                <span class="fila-nombre">Verificentro Gobernadores</span>
+                <span class="fila-meta">Remodelación de centro de verificación <span aria-hidden="true">·</span> Cuernavaca, Morelos</span>
+              </span>
+              <img class="fila-mini" src="img/verificentro-mini.jpg" width="360" height="203" alt="" loading="lazy" decoding="async">
+              <span class="fila-flecha" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="fila" data-sector="vivienda">
+            <a class="fila-enlace" href="#casa-pedregal" data-id="casa-pedregal">
+              <span class="fila-num">07</span>
+              <span class="fila-cuerpo">
+                <span class="fila-nombre">Casa Pedregal</span>
+                <span class="fila-meta">Proyecto residencial con énfasis en interiores <span aria-hidden="true">·</span> Ciudad de México</span>
+              </span>
+              <img class="fila-mini" src="img/casa-pedregal-mini.jpg" width="360" height="333" alt="" loading="lazy" decoding="async">
+              <span class="fila-flecha" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="fila" data-sector="publica">
+            <a class="fila-enlace" href="#hospital-mujer" data-id="hospital-mujer">
+              <span class="fila-num">08</span>
+              <span class="fila-cuerpo">
+                <span class="fila-nombre">Hospital de la Mujer</span>
+                <span class="fila-meta">Rehabilitación de fachadas e interiores <span aria-hidden="true">·</span> Yautepec, Morelos</span>
+              </span>
+              <img class="fila-mini" src="img/hospital-mujer-mini.jpg" width="360" height="270" alt="" loading="lazy" decoding="async">
+              <span class="fila-flecha" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="fila" data-sector="publica">
+            <a class="fila-enlace" href="#hospital-temixco" data-id="hospital-temixco">
+              <span class="fila-num">09</span>
+              <span class="fila-cuerpo">
+                <span class="fila-nombre">Hospital General de Temixco</span>
+                <span class="fila-meta">Rehabilitación de fachada y accesos <span aria-hidden="true">·</span> Temixco, Morelos</span>
+              </span>
+              <img class="fila-mini" src="img/hospital-temixco-mini.jpg" width="360" height="165" alt="" loading="lazy" decoding="async">
+              <span class="fila-flecha" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="fila" data-sector="diseno">
+            <a class="fila-enlace" href="#club-51" data-id="club-51">
+              <span class="fila-num">10</span>
+              <span class="fila-cuerpo">
+                <span class="fila-nombre">Hotel Boutique Club 51</span>
+                <span class="fila-meta">Proyecto arquitectónico de 28 suites <span aria-hidden="true">·</span> Torre Mayor, Ciudad de México</span>
+              </span>
+              <img class="fila-mini" src="img/club-51-mini.jpg" width="326" height="360" alt="" loading="lazy" decoding="async">
+              <span class="fila-flecha" aria-hidden="true">→</span>
+            </a>
+          </li>
+        </ol>
+        <figure class="vista" aria-hidden="true">
+          <img id="vista-img" src="img/albergue-ajusco-portada.jpg" width="1400" height="787" alt="">
+          <figcaption>
+            <span class="vista-sector" id="vista-sector">Obra pública y salud</span>
+            <span class="vista-texto" id="vista-texto">Albergue Alpino Ajusco · Parque Natural Volcán Ajusco, CDMX</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion" id="servicios" aria-labelledby="titulo-servicios">
+    <div class="contenedor">
+      <div class="seccion-cabeza">
+        <div>
+          <p class="ceja">Servicios</p>
+          <h2 id="titulo-servicios">Lo que hacemos</h2>
+        </div>
+        <p>Cuatro líneas de trabajo que pueden contratarse juntas o por separado, para obra nueva o para un espacio que ya existe.</p>
+      </div>
+      <ol class="servicios-lista">
+        <li><span class="n">01</span><h3>Diseño arquitectónico</h3><p>Proyecto arquitectónico y de interiores para obra nueva o remodelación, del anteproyecto al proyecto ejecutivo.</p></li>
+        <li><span class="n">02</span><h3>Construcción</h3><p>Ejecución de obra con supervisión técnica y control de calidad, de la obra negra a los acabados.</p></li>
+        <li><span class="n">03</span><h3>Remodelación y rehabilitación</h3><p>Renovación integral o parcial de casas, comercios y edificios públicos: demolición, obra nueva y acabados.</p></li>
+        <li><span class="n">04</span><h3>Interiores y acabados</h3><p>Diseño interior, acabados y carpintería para estancias, recámaras, baños, cocinas y áreas de hospedaje.</p></li>
+      </ol>
+      <div class="eco">
+        <div class="eco-cabeza">
+          <h3>Ecotecnologías que integramos</h3>
+          <p>Se definen en la etapa de proyecto, según el terreno y las necesidades de cada cliente.</p>
+        </div>
+        <ul>
+          <li><strong>Muros verdes y huertos</strong><span>Vegetación integrada a la construcción; aísla del ruido y del calor.</span></li>
+          <li><strong>Energía fotovoltaica</strong><span>Paneles solares con inversor y baterías para uso doméstico.</span></li>
+          <li><strong>Aguas negras</strong><span>Fosa séptica y humedal que filtran el agua para reutilizarla en riego.</span></li>
+          <li><strong>Aguas grises</strong><span>Biojardinera que limpia el agua de regaderas y lavabos.</span></li>
+          <li><strong>Captación pluvial</strong><span>Separa las primeras lluvias y almacena agua limpia en cisterna.</span></li>
+          <li><strong>Calentador solar</strong><span>Tubos al vacío y termotanque para agua caliente sin gas.</span></li>
+          <li><strong>Biodigestor de grasas</strong><span>Filtra el agua de la tarja de cocina para su reúso.</span></li>
+          <li><strong>Bici-bomba de agua</strong><span>Bombeo accionado por bicicleta, sin consumo eléctrico.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion proceso" id="proceso" aria-labelledby="titulo-proceso">
+    <div class="contenedor">
+      <div class="seccion-cabeza">
+        <div>
+          <p class="ceja">Cómo trabajamos</p>
+          <h2 id="titulo-proceso">Del proyecto a la entrega</h2>
+        </div>
+        <p>Cuatro etapas claras, para que usted sepa qué esperar en cada momento.</p>
+      </div>
+      <ol class="pasos">
+        <li><span class="n">01</span><h3>Diagnóstico</h3><p>Visita al sitio, levantamiento y definición de necesidades, alcance y presupuesto.</p></li>
+        <li><span class="n">02</span><h3>Proyecto</h3><p>Propuesta de diseño, proyecto ejecutivo y cotización detallada por partidas.</p></li>
+        <li><span class="n">03</span><h3>Construcción</h3><p>Ejecución de la obra con supervisión en sitio, control de calidad y reportes de avance.</p></li>
+        <li><span class="n">04</span><h3>Entrega</h3><p>Espacios terminados, limpieza final y recorrido de entrega con el cliente.</p></li>
+      </ol>
+      <div class="proceso-nota">
+        <figure>
+          <img src="img/proceso.jpg" width="960" height="642" alt="Escalera y muro de piedra terminados en la casa SU-03" loading="lazy" decoding="async">
+        </figure>
+        <p>Durante la obra, el avance se documenta con bitácora y reporte fotográfico para el cliente.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion" id="nosotros" aria-labelledby="titulo-nosotros">
+    <div class="contenedor">
+      <div class="seccion-cabeza">
+        <div>
+          <p class="ceja">Nosotros</p>
+          <h2 id="titulo-nosotros">Quiénes somos</h2>
+        </div>
+      </div>
+      <div class="nosotros-cuerpo">
+        <div class="nosotros-texto">
+          <p class="nosotros-lead">ADCO Arquitectos desarrolla proyectos de arquitectura, diseño, construcción y remodelación para clientes particulares, empresas y el sector público, del anteproyecto a la entrega de la obra.</p>
+          <div class="mision">
+            <div><p class="ceja">Misión</p><p>Generar un impacto social mediante nuestros procesos de gestión y operación, promoviendo el desarrollo integral de nuestros trabajadores y la búsqueda permanente de la excelencia a través de la innovación.</p></div>
+            <div><p class="ceja">Visión</p><p>Ser reconocidos como una empresa líder en construcción, con un equipo unido, comprometido con la innovación, la calidad y los entornos de trabajo seguros.</p></div>
+          </div>
+        </div>
+        <figure class="nosotros-foto">
+          <img src="img/nosotros.jpg" width="735" height="693" alt="Estancia con chimenea de doble vista en el Hotel Casa Fernanda" loading="lazy" decoding="async">
+          <figcaption>Hotel Casa Fernanda · Tepoztlán, Morelos</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion contacto" id="contacto" aria-labelledby="titulo-contacto">
+    <div class="contenedor contacto-cuerpo">
+      <div class="contacto-datos">
+        <p class="ceja">Contacto</p>
+        <h2 id="titulo-contacto">Conversemos sobre su proyecto</h2>
+        <p>Escríbanos para agendar una visita o solicitar una cotización.</p>
+        <dl>
+          <div><dt>WhatsApp</dt><dd><a href="https://wa.me/527775114267" rel="noopener">(777) 511-42-67</a></dd></div>
+          <div><dt>Correo</dt><dd><a href="mailto:alonzo@adcoarquitectos.com">alonzo@adcoarquitectos.com</a></dd></div>
+          <div><dt>Oficina</dt><dd>Prolongación Miguel Hidalgo 198, Col. Chamilpa, C.P. 62210, Cuernavaca, Morelos</dd></div>
+          <div><dt>Zona de trabajo</dt><dd>Ciudad de México y Morelos</dd></div>
+        </dl>
+      </div>
+      <form class="formulario" id="formulario" novalidate>
+        <h3>Cuéntenos de su proyecto</h3>
+        <p>Al enviar se abre WhatsApp con su mensaje listo para mandarlo.</p>
+        <div class="campo"><label for="f-nombre">Nombre</label><input id="f-nombre" name="nombre" autocomplete="name" placeholder="Su nombre"></div>
+        <div class="campo"><label for="f-tipo">Tipo de proyecto</label>
+          <select id="f-tipo" name="tipo">
+            <option>Casa nueva</option>
+            <option>Remodelación</option>
+            <option>Interiores y acabados</option>
+            <option>Comercio u oficina</option>
+            <option>Obra pública o institucional</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div class="campo"><label for="f-mensaje">Mensaje</label><textarea id="f-mensaje" name="mensaje" placeholder="Ubicación, metros aproximados y lo que tiene en mente"></textarea></div>
+        <a class="boton boton-lleno" id="f-enviar" href="https://wa.me/527775114267" rel="noopener">Enviar por WhatsApp</a>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <img src="img/logo-adco-blanco.png" width="134" height="240" alt="Logotipo de ADCO architecture &amp; design" loading="lazy">
+    <p>ADCO Arquitectos<br>Corporativo de Servicios en Arquitectura y Construcción ADCO, S.A. de C.V.</p>
+    <p>© 2026 ADCO Arquitectos · Cuernavaca, Morelos</p>
+  </div>
+</footer>
+
+<dialog class="ficha" id="ficha" aria-labelledby="ficha-titulo">
+  <div class="ficha-barra">
+    <p class="ceja" id="ficha-sector"></p>
+    <button type="button" class="icono" id="ficha-cerrar" aria-label="Cerrar la ficha de la obra">Cerrar ✕</button>
+  </div>
+  <div class="ficha-cuerpo">
+    <h3 id="ficha-titulo"></h3>
+    <p class="ficha-desc" id="ficha-desc"></p>
+    <dl class="ficha-datos" id="ficha-datos"></dl>
+    <div class="galeria" id="ficha-galeria"></div>
+  </div>
+  <nav class="ficha-nav" aria-label="Otras obras">
+    <button type="button" id="ficha-ant"></button>
+    <button type="button" id="ficha-sig"></button>
+  </nav>
+</dialog>
+
+<script id="datos-obras" type="application/json">[{"id":"albergue-ajusco","num":"01","nombre":"Albergue Alpino Ajusco","sector":"publica","sectorNombre":"Obra pública y salud","tipo":"Rehabilitación de albergue y cabañas","ubicacion":"Parque Natural Volcán Ajusco, CDMX","servicio":"Construcción y rehabilitación","alcance":"Recubrimiento epóxico, iluminación LED y cabañas","descripcion":"Recubrimiento epóxico en cocina, alberca termal, fuente y asadores; iluminación indirecta con tira LED en las vigas de la estancia principal, y ensamble de cabañas.","portada":{"src":"img/albergue-ajusco-portada.jpg","w":1400,"h":787},"mini":{"src":"img/albergue-ajusco-mini.jpg","w":360,"h":202},"fotos":[{"src":"img/albergue-ajusco-01.jpg","w":1067,"h":600,"etiqueta":"ILUMINACIÓN LED","pie":"Tira LED en las vigas de la estancia principal"},{"src":"img/albergue-ajusco-02.jpg","w":989,"h":1600,"etiqueta":"RECUBRIMIENTO EPÓXICO","pie":"Mesas y bancas de la zona de asadores"},{"src":"img/albergue-ajusco-03.jpg","w":576,"h":789,"etiqueta":"RECUBRIMIENTO EPÓXICO","pie":"Fuente ornamental con acabado hojuelado"},{"src":"img/albergue-ajusco-04.jpg","w":1600,"h":900,"etiqueta":"EN OBRA","pie":"Aplicación del epóxico en el vaso de la alberca"},{"src":"img/albergue-ajusco-05.jpg","w":1161,"h":653,"etiqueta":"TERMINADO","pie":"Alberca termal con vaso epóxico y forro de duela"},{"src":"img/albergue-ajusco-06.jpg","w":900,"h":1600,"etiqueta":"CABAÑAS","pie":"Cabaña con duela, aceite y techumbre de lámina"}]},{"id":"casa-su-03","num":"02","nombre":"Casa SU-03","sector":"vivienda","sectorNombre":"Vivienda","tipo":"Diseño y construcción de casa habitación","ubicacion":"Jiutepec, Morelos","servicio":"Diseño arquitectónico + Construcción","alcance":"Obra negra, acabados e interiores","descripcion":"Proyecto integral, del diseño a la obra: estructura, patio interior, escalera con muro de piedra y espacios terminados.","portada":{"src":"img/casa-su-03-portada.jpg","w":1034,"h":958},"mini":{"src":"img/casa-su-03-mini.jpg","w":360,"h":334},"fotos":[{"src":"img/casa-su-03-01.jpg","w":810,"h":780,"etiqueta":"OBRA NEGRA","pie":"Estructura y muros en proceso"},{"src":"img/casa-su-03-02.jpg","w":768,"h":738,"etiqueta":"ACABADOS","pie":"Escalera y muro de piedra en proceso"},{"src":"img/casa-su-03-03.jpg","w":864,"h":1152,"etiqueta":"TERMINADO","pie":"Escalera y doble altura"},{"src":"img/casa-su-03-04.jpg","w":1280,"h":911,"etiqueta":"TERMINADO","pie":"Ventanal hacia el patio interior"},{"src":"img/casa-su-03-05.jpg","w":618,"h":627,"etiqueta":"TERMINADO","pie":"Cocina"},{"src":"img/casa-su-03-06.jpg","w":1280,"h":1280,"etiqueta":"TERMINADO","pie":"Terraza con asador"}]},{"id":"casa-aj8","num":"03","nombre":"Casa AJ8","sector":"vivienda","sectorNombre":"Vivienda","tipo":"Remodelación integral de casa habitación","ubicacion":"Cuernavaca, Morelos","servicio":"Remodelación residencial","alcance":"Fachadas, interiores, baños, cocina y jardín","descripcion":"Renovación completa de una casa existente: fachadas, sala, comedor, cocina, recámaras, baños, terrazas y jardín.","portada":{"src":"img/casa-aj8-portada.jpg","w":1400,"h":697},"mini":{"src":"img/casa-aj8-mini.jpg","w":360,"h":179},"fotos":[{"src":"img/casa-aj8-01.jpg","w":710,"h":481,"etiqueta":"ANTES","pie":"Fachada exterior"},{"src":"img/casa-aj8-02.jpg","w":1436,"h":812,"etiqueta":"ANTES","pie":"Sala"},{"src":"img/casa-aj8-03.jpg","w":1028,"h":736,"etiqueta":"ANTES","pie":"Comedor"},{"src":"img/casa-aj8-04.jpg","w":890,"h":647,"etiqueta":"DESPUÉS","pie":"Fachada exterior"},{"src":"img/casa-aj8-05.jpg","w":953,"h":685,"etiqueta":"DESPUÉS","pie":"Sala"},{"src":"img/casa-aj8-06.jpg","w":1024,"h":753,"etiqueta":"DESPUÉS","pie":"Comedor"},{"src":"img/casa-aj8-07.jpg","w":1202,"h":784,"etiqueta":"ANTES","pie":"Cocina"},{"src":"img/casa-aj8-08.jpg","w":1077,"h":808,"etiqueta":"ANTES","pie":"Baño de recámara principal"},{"src":"img/casa-aj8-09.jpg","w":1015,"h":761,"etiqueta":"ANTES","pie":"Recámara principal"},{"src":"img/casa-aj8-10.jpg","w":678,"h":576,"etiqueta":"DESPUÉS","pie":"Cocina"},{"src":"img/casa-aj8-11.jpg","w":1024,"h":768,"etiqueta":"DESPUÉS","pie":"Baño de recámara principal"},{"src":"img/casa-aj8-12.jpg","w":888,"h":681,"etiqueta":"DESPUÉS","pie":"Recámara principal"}]},{"id":"hotel-casa-fernanda","num":"04","nombre":"Hotel Casa Fernanda","sector":"hospedaje","sectorNombre":"Hospedaje","tipo":"Proyecto de hospitalidad","ubicacion":"Tepoztlán, Morelos","servicio":"Diseño y construcción","alcance":"Habitaciones, spa, lounge y terraza","descripcion":"Diseño y construcción de espacios para hospedaje: habitaciones, cabina de spa, lounge con chimenea y terraza con vista a la sierra.","portada":{"src":"img/hotel-casa-fernanda-portada.jpg","w":691,"h":640},"mini":{"src":"img/hotel-casa-fernanda-mini.jpg","w":360,"h":333},"fotos":[{"src":"img/hotel-casa-fernanda-01.jpg","w":548,"h":527,"etiqueta":"SPA","pie":"Cabina de masaje"},{"src":"img/hotel-casa-fernanda-02.jpg","w":720,"h":693,"etiqueta":"LOUNGE","pie":"Sala con chimenea de doble vista"},{"src":"img/hotel-casa-fernanda-03.jpg","w":729,"h":702,"etiqueta":"TERRAZA","pie":"Vista a la sierra de Tepoztlán"},{"src":"img/hotel-casa-fernanda-04.jpg","w":696,"h":640,"etiqueta":"EXTERIOR","pie":"Habitación con terraza y jardín"},{"src":"img/hotel-casa-fernanda-05.jpg","w":517,"h":690,"etiqueta":"CIRCULACIÓN","pie":"Escalera con muro de piedra"},{"src":"img/hotel-casa-fernanda-06.jpg","w":977,"h":733,"etiqueta":"SALA","pie":"Área de estar"}]},{"id":"casa-atlamaya","num":"05","nombre":"Casa Atlamaya","sector":"vivienda","sectorNombre":"Vivienda","tipo":"Diseño y remodelación de vivienda existente","ubicacion":"Ciudad de México","servicio":"Diseño y construcción","alcance":"Demolición, instalaciones, acabados e interiores","descripcion":"Intervención en una vivienda existente, con registro del estado inicial, el proceso de obra y los espacios terminados.","portada":{"src":"img/casa-atlamaya-portada.jpg","w":869,"h":652},"mini":{"src":"img/casa-atlamaya-mini.jpg","w":360,"h":270},"fotos":[{"src":"img/casa-atlamaya-01.jpg","w":719,"h":746,"etiqueta":"ANTES","pie":"Fachada, estado inicial"},{"src":"img/casa-atlamaya-02.jpg","w":772,"h":579,"etiqueta":"PROCESO","pie":"Interior en obra"},{"src":"img/casa-atlamaya-03.jpg","w":934,"h":707,"etiqueta":"PROCESO","pie":"Instalaciones"},{"src":"img/casa-atlamaya-04.jpg","w":862,"h":652,"etiqueta":"DESPUÉS","pie":"Comedor"},{"src":"img/casa-atlamaya-05.jpg","w":869,"h":652,"etiqueta":"DESPUÉS","pie":"Sala"},{"src":"img/casa-atlamaya-06.jpg","w":629,"h":606,"etiqueta":"DESPUÉS","pie":"Recámara"}]},{"id":"verificentro","num":"06","nombre":"Verificentro Gobernadores","sector":"publica","sectorNombre":"Obra pública y salud","tipo":"Remodelación de centro de verificación","ubicacion":"Cuernavaca, Morelos","servicio":"Remodelación y obra civil","alcance":"Accesos, techumbre, islas y líneas de verificación","descripcion":"Remodelación completa del inmueble: fachada, accesos con rampa, techumbre metálica y área de verificación.","portada":{"src":"img/verificentro-portada.jpg","w":1280,"h":720},"mini":{"src":"img/verificentro-mini.jpg","w":360,"h":203},"fotos":[{"src":"img/verificentro-01.jpg","w":1032,"h":774,"etiqueta":"ANTES","pie":"Predio al inicio de los trabajos"},{"src":"img/verificentro-02.jpg","w":1280,"h":960,"etiqueta":"PROCESO","pie":"Estructura de la techumbre"},{"src":"img/verificentro-03.jpg","w":1024,"h":768,"etiqueta":"DESPUÉS","pie":"Líneas de verificación terminadas"}]},{"id":"casa-pedregal","num":"07","nombre":"Casa Pedregal","sector":"vivienda","sectorNombre":"Vivienda","tipo":"Proyecto residencial con énfasis en interiores","ubicacion":"Ciudad de México","servicio":"Diseño y construcción","alcance":"Interiores, acabados y carpintería","descripcion":"Vivienda con énfasis en el diseño interior: estancia, recámara y detalles de carpintería en tonos oscuros y neutros.","portada":{"src":"img/casa-pedregal-portada.jpg","w":678,"h":628},"mini":{"src":"img/casa-pedregal-mini.jpg","w":360,"h":333},"fotos":[{"src":"img/casa-pedregal-01.jpg","w":760,"h":732,"etiqueta":"ESTANCIA","pie":"Sala con acabados en tonos neutros"},{"src":"img/casa-pedregal-02.jpg","w":458,"h":441,"etiqueta":"DETALLE","pie":"Interiores en tonos oscuros"},{"src":"img/casa-pedregal-03.jpg","w":475,"h":457,"etiqueta":"CARPINTERÍA","pie":"Puerta y herrajes"}]},{"id":"hospital-mujer","num":"08","nombre":"Hospital de la Mujer","sector":"publica","sectorNombre":"Obra pública y salud","tipo":"Rehabilitación de fachadas e interiores","ubicacion":"Yautepec, Morelos","servicio":"Rehabilitación y mantenimiento","alcance":"Fachadas, reparación de muros, plafones y pintura","descripcion":"Trabajos de rehabilitación en el exterior y el interior del hospital, con registro del estado inicial y final.","portada":{"src":"img/hospital-mujer-portada.jpg","w":1280,"h":960},"mini":{"src":"img/hospital-mujer-mini.jpg","w":360,"h":270},"fotos":[{"src":"img/hospital-mujer-01.jpg","w":720,"h":1280,"etiqueta":"ANTES","pie":"Daño en muro"},{"src":"img/hospital-mujer-02.jpg","w":1280,"h":960,"etiqueta":"DESPUÉS","pie":"Fachada rehabilitada"},{"src":"img/hospital-mujer-03.jpg","w":864,"h":1152,"etiqueta":"DESPUÉS","pie":"Pasillo interior"}]},{"id":"hospital-temixco","num":"09","nombre":"Hospital General de Temixco","sector":"publica","sectorNombre":"Obra pública y salud","tipo":"Rehabilitación de fachada y accesos","ubicacion":"Temixco, Morelos","servicio":"Rehabilitación y mantenimiento","alcance":"Fachada, letrero, acceso principal y pintura","descripcion":"Hospital General «Enf. María de la Luz Delgado Morales»: rehabilitación de la fachada y del acceso principal.","portada":{"src":"img/hospital-temixco-portada.jpg","w":1280,"h":589},"mini":{"src":"img/hospital-temixco-mini.jpg","w":360,"h":165},"fotos":[{"src":"img/hospital-temixco-01.jpg","w":1280,"h":960,"etiqueta":"ANTES","pie":"Letrero de fachada"},{"src":"img/hospital-temixco-02.jpg","w":1280,"h":960,"etiqueta":"DESPUÉS","pie":"Acceso principal"},{"src":"img/hospital-temixco-03.jpg","w":1280,"h":960,"etiqueta":"DESPUÉS","pie":"Escalinata y rampa"}]},{"id":"club-51","num":"10","nombre":"Hotel Boutique Club 51","sector":"diseno","sectorNombre":"Diseño","tipo":"Proyecto arquitectónico de 28 suites","ubicacion":"Torre Mayor, Ciudad de México","servicio":"Proyecto arquitectónico e interiores","alcance":"28 suites en 1,992 m²","descripcion":"Distribución de 14 suites estándar, 10 master y 4 dobles, con recepción, circulaciones y áreas de servicio.","portada":{"src":"img/club-51-portada.jpg","w":1267,"h":1400},"mini":{"src":"img/club-51-mini.jpg","w":326,"h":360},"fotos":[{"src":"img/club-51-01.jpg","w":1280,"h":682,"etiqueta":"ZONIFICACIÓN","pie":"Distribución de los tres tipos de suite"},{"src":"img/club-51-02.jpg","w":1600,"h":800,"etiqueta":"SUITE ESTÁNDAR","pie":"Planta amueblada de 30.68 m²"},{"src":"img/club-51-03.jpg","w":1600,"h":1549,"etiqueta":"SUITE MASTER","pie":"Axonométrico con terraza y jacuzzi"}]}]</script>
+<script>
+(() => {
+  const OBRAS = JSON.parse(document.getElementById('datos-obras').textContent);
+  const porId = Object.fromEntries(OBRAS.map((o) => [o.id, o]));
+  const $ = (id) => document.getElementById(id);
+  const crear = (tag, props = {}, hijos = []) => {
+    const el = Object.assign(document.createElement(tag), props);
+    hijos.forEach((h) => el.append(h));
+    return el;
+  };
+
+  // ---------- vista previa del índice
+  const filas = [...document.querySelectorAll('.fila')];
+  const vistaImg = $('vista-img'), vistaSector = $('vista-sector'), vistaTexto = $('vista-texto');
+  function mostrar(id) {
+    const o = porId[id];
+    if (!o) return;
+    filas.forEach((f) => f.classList.toggle('activa', f.querySelector('a').dataset.id === id));
+    if (vistaImg.getAttribute('src') !== o.portada.src) {
+      vistaImg.style.opacity = '0.25';
+      const pre = new Image();
+      pre.onload = pre.onerror = () => { vistaImg.src = o.portada.src; vistaImg.style.opacity = '1'; };
+      pre.src = o.portada.src;
+    }
+    vistaSector.textContent = o.sectorNombre;
+    vistaTexto.textContent = o.nombre + ' · ' + o.ubicacion;
+  }
+  filas.forEach((f) => {
+    const a = f.querySelector('a');
+    a.addEventListener('mouseenter', () => mostrar(a.dataset.id));
+    a.addEventListener('focus', () => mostrar(a.dataset.id));
+    a.addEventListener('click', (e) => { e.preventDefault(); abrir(a.dataset.id); });
+  });
+
+  // ---------- filtros por sector
+  const filtros = [...document.querySelectorAll('.filtro')];
+  filtros.forEach((b) => b.addEventListener('click', () => {
+    filtros.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    const k = b.dataset.filtro;
+    filas.forEach((f) => { f.hidden = k !== 'todas' && f.dataset.sector !== k; });
+    const primera = filas.find((f) => !f.hidden);
+    if (primera) mostrar(primera.querySelector('a').dataset.id);
+  }));
+
+  // ---------- ficha de obra
+  const ficha = $('ficha');
+  let actual = null;
+  function visibles() { return filas.filter((f) => !f.hidden).map((f) => f.querySelector('a').dataset.id); }
+  function abrir(id) {
+    const o = porId[id];
+    if (!o) return;
+    actual = id;
+    $('ficha-sector').textContent = o.num + ' · ' + o.sectorNombre;
+    $('ficha-titulo').textContent = o.nombre;
+    $('ficha-desc').textContent = o.descripcion || '';
+    const datos = $('ficha-datos');
+    datos.replaceChildren();
+    [['Tipo', o.tipo], ['Ubicación', o.ubicacion], ['Servicio', o.servicio], ['Alcance', o.alcance]].forEach(([t, v]) => {
+      if (v) datos.append(crear('div', {}, [crear('dt', { textContent: t }), crear('dd', { textContent: v })]));
+    });
+    const gal = $('ficha-galeria');
+    gal.replaceChildren();
+    o.fotos.forEach((f) => {
+      const img = crear('img', { src: f.src, width: f.w, height: f.h, alt: (f.pie || o.nombre), loading: 'lazy', decoding: 'async' });
+      gal.append(crear('figure', {}, [img, crear('figcaption', {}, [crear('strong', { textContent: f.etiqueta }), crear('span', { textContent: f.pie })])]));
+    });
+    const lista = visibles().length ? visibles() : OBRAS.map((x) => x.id);
+    const i = Math.max(0, lista.indexOf(id));
+    const ant = porId[lista[(i - 1 + lista.length) % lista.length]], sig = porId[lista[(i + 1) % lista.length]];
+    $('ficha-ant').innerHTML = '';
+    $('ficha-ant').append(crear('small', { textContent: '← Obra anterior' }), ant.nombre);
+    $('ficha-ant').onclick = () => abrir(ant.id);
+    $('ficha-sig').innerHTML = '';
+    $('ficha-sig').append(crear('small', { textContent: 'Obra siguiente →' }), sig.nombre);
+    $('ficha-sig').onclick = () => abrir(sig.id);
+    if (!ficha.open) ficha.showModal();
+    ficha.scrollTop = 0;
+    try { history.replaceState(null, '', '#' + id); } catch (e) {}
+  }
+  function cerrar() { if (ficha.open) ficha.close(); }
+  $('ficha-cerrar').addEventListener('click', cerrar);
+  ficha.addEventListener('click', (e) => { if (e.target === ficha) cerrar(); });
+  ficha.addEventListener('close', () => {
+    try { history.replaceState(null, '', '#obras'); } catch (e) {}
+    const a = document.querySelector('.fila a[data-id="' + actual + '"]');
+    if (a) a.focus({ preventScroll: true });
+  });
+  ficha.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight') $('ficha-sig').click();
+    if (e.key === 'ArrowLeft') $('ficha-ant').click();
+  });
+  function porHash() {
+    const id = decodeURIComponent(location.hash.slice(1));
+    if (porId[id]) abrir(id);
+  }
+  window.addEventListener('hashchange', porHash);
+  porHash();
+
+  // ---------- formulario: arma el mensaje de WhatsApp
+  const form = $('formulario'), enviar = $('f-enviar');
+  function armar() {
+    const nombre = $('f-nombre').value.trim(), tipo = $('f-tipo').value, msg = $('f-mensaje').value.trim();
+    const texto = ['Hola, ' + (nombre ? 'soy ' + nombre + '. ' : '') + 'Me interesa un proyecto de ' + tipo.toLowerCase() + '.', msg].filter(Boolean).join(' ');
+    enviar.href = 'https://wa.me/527775114267?text=' + encodeURIComponent(texto);
+  }
+  form.addEventListener('input', armar);
+  form.addEventListener('submit', (e) => e.preventDefault());
+  armar();
+})();
+</script>
+</body>
+</html>
