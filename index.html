@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"GeneralContractor","name":"ADCO Arquitectos","legalName":"Corporativo de Servicios en Arquitectura y Construcción ADCO, S.A. de C.V.","url":"https://guzmansyhair-a11y.github.io/adco-arquitectos/","logo":"https://guzmansyhair-a11y.github.io/adco-arquitectos/img/logo-adco-azul.png","image":"https://guzmansyhair-a11y.github.io/adco-arquitectos/img/compartir.jpg","telephone":"+52 777 511 4267","email":"alonzo@adcoarquitectos.com","address":{"@type":"PostalAddress","streetAddress":"Prolongación Miguel Hidalgo 198, Col. Chamilpa","addressLocality":"Cuernavaca","addressRegion":"Morelos","postalCode":"62210","addressCountry":"MX"},"areaServed":["Ciudad de México","Morelos"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"GeneralContractor","name":"ADCO Arquitectos","legalName":"Corporativo de Servicios en Arquitectura y Construcción ADCO, S.A. de C.V.","url":"https://guzmansyhair-a11y.github.io/adco-arquitectos/","logo":"https://guzmansyhair-a11y.github.io/adco-arquitectos/img/logo-adco-azul.png","image":"https://guzmansyhair-a11y.github.io/adco-arquitectos/img/compartir.jpg","telephone":"+52 777 511 4267","email":"alonzo@adcoarquitectos.com","address":{"@type":"PostalAddress","streetAddress":"Prolongación Miguel Hidalgo 198, Col. Chamilpa","addressLocality":"Cuernavaca","addressRegion":"Morelos","postalCode":"62210","addressCountry":"MX"},"areaServed":["Ciudad de México","Morelos"],"makesOffer":{"@type":"Offer","itemOffered":{"@type":"Service","name":"Renta de generadores eléctricos","description":"Generadores de 900 W, 3000 W y 5000 W en renta para obras, eventos y trabajos sin suministro de energía."}}}</script>
 <style>
 :root {
   /* Retícula de 12 columnas · índice tipográfico de obras con vista previa fija · corte diagonal del logotipo ADCO en fotos y bandas */
@@ -137,6 +137,20 @@ p { margin: 0; }
 .eco li { display: grid; gap: .25rem; border-top: 1px solid var(--regla); padding-top: .8rem; }
 .eco li strong { font-weight: 600; font-size: .98rem; }
 .eco li span { color: var(--gris); font-size: .9rem; line-height: 1.5; }
+/* ---------- renta de generadores */
+.renta { margin-top: 1.2rem; background: var(--papel); border: 1px solid var(--regla); padding: clamp(1.4rem, 3vw, 2.2rem); display: grid; grid-template-columns: repeat(12, 1fr); gap: 1.6rem clamp(1rem, 3vw, 2.5rem); scroll-margin-top: 6rem; }
+.renta-texto { grid-column: 1 / span 5; display: grid; gap: .9rem; align-content: start; }
+.renta-texto h3 { font-size: 1.85rem; }
+.renta-texto p { color: var(--gris); }
+.renta-texto .renta-nota { font-size: .9rem; }
+.renta-texto .boton { justify-self: start; margin-top: .5rem; }
+.renta-equipos { grid-column: 6 / span 7; align-self: start; list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--tinta); }
+.renta-equipos li { display: grid; grid-template-columns: 7.2rem 1fr auto; align-items: baseline; gap: .3rem 1.2rem; padding: 1.05rem 0; border-bottom: 1px solid var(--regla); }
+.renta-w { font: 500 2.3rem/1 var(--display); font-variant-numeric: lining-nums; white-space: nowrap; }
+.renta-equipo { display: grid; gap: .15rem; }
+.renta-equipo strong { font-weight: 600; font-size: 1rem; }
+.renta-equipo small { color: var(--gris); font-size: .88rem; }
+.renta-cant { font: 600 .75rem/1.2 var(--texto); letter-spacing: .14em; text-transform: uppercase; color: var(--acero); white-space: nowrap; }
 
 /* ---------- proceso */
 .proceso { background: var(--tinta); color: var(--papel); }
@@ -227,6 +241,7 @@ dialog.ficha::backdrop { background: rgba(15, 28, 46, .72); }
   .fila-flecha { display: none; }
   .servicios-lista { grid-template-columns: 1fr; }
   .eco ul { grid-template-columns: repeat(2, 1fr); }
+  .renta-texto, .renta-equipos { grid-column: 1 / -1; }
   .pasos { grid-template-columns: repeat(2, 1fr); row-gap: 2rem; }
   .proceso-nota figure, .proceso-nota p { grid-column: 1 / -1; }
   .proceso-nota p { margin-top: 1.5rem; }
@@ -241,6 +256,8 @@ dialog.ficha::backdrop { background: rgba(15, 28, 46, .72); }
   .datos { grid-template-columns: 1fr; }
   .datos li { padding: .9rem 0; border-bottom: 1px solid var(--regla); }
   .eco ul, .pasos, .mision, .galeria { grid-template-columns: 1fr; }
+  .renta-equipos li { grid-template-columns: 1fr auto; }
+  .renta-w { grid-column: 1 / -1; }
   .pie p:last-child { margin-left: 0; }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -460,6 +477,20 @@ dialog.ficha::backdrop { background: rgba(15, 28, 46, .72); }
           <li><strong>Bici-bomba de agua</strong><span>Bombeo accionado por bicicleta, sin consumo eléctrico.</span></li>
         </ul>
       </div>
+      <div class="renta" id="renta-generadores" aria-labelledby="titulo-renta">
+        <div class="renta-texto">
+          <p class="ceja">Renta de equipo</p>
+          <h3 id="titulo-renta">Renta de generadores</h3>
+          <p>Contamos con generadores eléctricos en renta para obras, eventos y trabajos en sitios sin suministro de energía.</p>
+          <p class="renta-nota">Renta sujeta a disponibilidad. La cotización se realiza de acuerdo con el equipo y el periodo de renta.</p>
+          <a class="boton boton-lleno" href="https://wa.me/527775114267?text=Hola%2C%20me%20interesa%20la%20renta%20de%20un%20generador%20de%20ADCO.%0A%0ANombre%3A%20%0AGenerador%20de%20inter%C3%A9s%20(900%20W%2C%203000%20W%20o%205000%20W)%3A%20%0AFechas%20de%20renta%3A%20%0ALugar%20de%20uso%3A%20%0A%0A%C2%BFMe%20apoyan%20con%20la%20cotizaci%C3%B3n%20y%20la%20disponibilidad%2C%20por%20favor%3F" rel="noopener">Solicitar cotización por WhatsApp</a>
+        </div>
+        <ul class="renta-equipos" aria-label="Generadores disponibles para renta">
+          <li><span class="renta-w">900 W</span><span class="renta-equipo"><strong>Generador Husky</strong><small>Potencia máxima</small></span><span class="renta-cant">2 equipos</span></li>
+          <li><span class="renta-w">3000 W</span><span class="renta-equipo"><strong>Generador Foreman</strong></span><span class="renta-cant">1 equipo</span></li>
+          <li><span class="renta-w">5000 W</span><span class="renta-equipo"><strong>Generador</strong></span><span class="renta-cant">1 equipo</span></li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -535,6 +566,7 @@ dialog.ficha::backdrop { background: rgba(15, 28, 46, .72); }
             <option>Interiores y acabados</option>
             <option>Comercio u oficina</option>
             <option>Obra pública o institucional</option>
+            <option>Renta de generadores</option>
             <option>Otro</option>
           </select>
         </div>
@@ -673,7 +705,8 @@ dialog.ficha::backdrop { background: rgba(15, 28, 46, .72); }
   const form = $('formulario'), enviar = $('f-enviar');
   function armar() {
     const nombre = $('f-nombre').value.trim(), tipo = $('f-tipo').value, msg = $('f-mensaje').value.trim();
-    const texto = ['Hola, ' + (nombre ? 'soy ' + nombre + '. ' : '') + 'Me interesa un proyecto de ' + tipo.toLowerCase() + '.', msg].filter(Boolean).join(' ');
+    const interes = tipo === 'Renta de generadores' ? 'Me interesa la renta de un generador.' : 'Me interesa un proyecto de ' + tipo.toLowerCase() + '.';
+    const texto = ['Hola, ' + (nombre ? 'soy ' + nombre + '. ' : '') + interes, msg].filter(Boolean).join(' ');
     enviar.href = 'https://wa.me/527775114267?text=' + encodeURIComponent(texto);
   }
   form.addEventListener('input', armar);
