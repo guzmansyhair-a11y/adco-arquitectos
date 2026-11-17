@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ADCO Arquitectos</title>
-<meta name="description" content="ADCO Arquitectos: diseño, construcción y remodelación de casas, hospedaje, salud y obra pública en la Ciudad de México y Morelos.">
+<meta name="description" content="ADCO Arquitectos: diseño, construcción y remodelación de vivienda, conjuntos habitacionales, hospedaje, salud, urbanización y obra pública en la Ciudad de México y Morelos.">
 <link rel="canonical" href="https://guzmansyhair-a11y.github.io/adco-arquitectos/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="ADCO Arquitectos · Diseño, construcción y remodelación">
-<meta property="og:description" content="Obras de vivienda, hospedaje, salud y obra pública en la Ciudad de México y Morelos.">
+<meta property="og:description" content="Obras de vivienda, hospedaje, salud, urbanización y obra pública en la Ciudad de México y Morelos.">
 <meta property="og:url" content="https://guzmansyhair-a11y.github.io/adco-arquitectos/">
 <meta property="og:image" content="https://guzmansyhair-a11y.github.io/adco-arquitectos/img/compartir.jpg">
 <meta property="og:locale" content="es_MX">
@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"GeneralContractor","name":"ADCO Arquitectos","legalName":"Corporativo de Servicios en Arquitectura y Construcción ADCO, S.A. de C.V.","url":"https://guzmansyhair-a11y.github.io/adco-arquitectos/","logo":"https://guzmansyhair-a11y.github.io/adco-arquitectos/img/logo-adco-azul.png","image":"https://guzmansyhair-a11y.github.io/adco-arquitectos/img/compartir.jpg","telephone":"+52 777 511 4267","email":"alonzo@adcoarquitectos.com","address":{"@type":"PostalAddress","streetAddress":"Prolongación Miguel Hidalgo 198, Col. Chamilpa","addressLocality":"Cuernavaca","addressRegion":"Morelos","postalCode":"62210","addressCountry":"MX"},"areaServed":["Ciudad de México","Morelos"],"makesOffer":{"@type":"Offer","itemOffered":{"@type":"Service","name":"Renta de generadores eléctricos","description":"Generadores de 900 W, 3000 W, 4000 W y 5000 W en renta para obras, eventos y trabajos sin suministro de energía."}}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"GeneralContractor","name":"ADCO Arquitectos","legalName":"Corporativo de Servicios en Arquitectura y Construcción ADCO, S.A. de C.V.","url":"https://guzmansyhair-a11y.github.io/adco-arquitectos/","logo":"https://guzmansyhair-a11y.github.io/adco-arquitectos/img/logo-adco-azul.png","image":"https://guzmansyhair-a11y.github.io/adco-arquitectos/img/compartir.jpg","telephone":"+52 777 511 4267","email":"alonzo@adcoarquitectos.com","address":{"@type":"PostalAddress","streetAddress":"Prolongación Miguel Hidalgo 198, Col. Chamilpa","addressLocality":"Cuernavaca","addressRegion":"Morelos","postalCode":"62210","addressCountry":"MX"},"areaServed":["Ciudad de México","Morelos","Estado de México","Tlaxcala"],"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Conjuntos habitacionales y condominios","description":"Proyecto y construcción de vivienda en conjunto; proyecto arquitectónico de edificios de departamentos, privadas residenciales y usos mixtos."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Urbanización y obra civil","description":"Pavimentos de concreto hidráulico, guarniciones, banquetas, redes de drenaje sanitario, terracerías, excavaciones y cimentaciones."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Renta de generadores eléctricos","description":"Generadores de 900 W, 3000 W, 4000 W y 5000 W en renta para obras, eventos y trabajos sin suministro de energía."}}]}</script>
 <style>
 :root {
   /* Retícula de 12 columnas · índice tipográfico de obras con vista previa fija · corte diagonal del logotipo ADCO en fotos y bandas */
@@ -226,6 +226,53 @@ dialog.ficha::backdrop { background: rgba(15, 28, 46, .72); }
 .ficha-nav button:last-child { text-align: right; }
 .ficha-nav small { display: block; font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--acero); font-weight: 600; }
 
+/* ---------- servicios de mayor escala */
+.servicios-sub { margin: clamp(1.2rem, 3vw, 2.2rem) 0 1.4rem; display: grid; gap: .6rem; max-width: 46rem; }
+.servicios-sub h3 { font-size: clamp(1.9rem, 3.2vw, 2.6rem); }
+.servicios-sub p:last-child { color: var(--gris); }
+.servicios-ref { grid-column: 2; font-size: .9rem; margin-top: .35rem; }
+.servicios-ref span:first-child { font: 600 .72rem/1.2 var(--texto); letter-spacing: .14em; text-transform: uppercase; color: var(--acero); margin-right: .35rem; }
+.servicios-ref a { color: var(--tinta); text-decoration-color: var(--niebla); text-underline-offset: 3px; }
+.servicios-ref a:hover { text-decoration-color: var(--tinta); }
+
+/* ---------- sociedades */
+.sociedades { margin-top: clamp(2.5rem, 5vw, 4rem); border-top: 1px solid var(--tinta); padding-top: clamp(1.4rem, 3vw, 2rem); scroll-margin-top: 6rem; }
+.sociedades-cabeza { display: grid; gap: .6rem; max-width: 46rem; margin-bottom: 1.6rem; }
+.sociedades-cabeza h3 { font-size: clamp(1.9rem, 3.2vw, 2.6rem); }
+.sociedades-cabeza p:last-child { color: var(--gris); }
+.sociedades-lista { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem clamp(1.2rem, 3vw, 2.5rem); }
+.sociedades-lista li { display: grid; gap: .4rem; align-content: start; }
+.sociedades-lista h4 { font: 600 1.75rem/1.05 var(--display); margin: 0; }
+.soc-razon { font-size: .88rem; color: var(--gris); }
+.soc-fotos { display: grid; grid-template-columns: 1fr 1fr; gap: .45rem; margin: .55rem 0 .35rem; }
+.soc-fotos img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--piedra); }
+.soc-fotos img.ancha { grid-column: 1 / -1; aspect-ratio: 8 / 3; }
+.soc-pie { font-size: .92rem; color: var(--gris); }
+
+/* ---------- recorrido aéreo (dentro de la ficha de obra) */
+.recorrido { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 4fr) auto; gap: 0 clamp(1.2rem, 3vw, 2.2rem); align-items: center; background: var(--tinta); color: var(--papel); }
+.recorrido[hidden] { display: none; }
+.recorrido > img { width: 100%; height: 100%; min-height: 17rem; aspect-ratio: 4 / 3; object-fit: cover; }
+.recorrido-texto { display: grid; gap: .8rem; padding: 1.6rem 0; align-content: center; }
+.recorrido-texto .ceja { color: var(--niebla); }
+.recorrido-texto h4 { font: 600 clamp(1.7rem, 2.6vw, 2.2rem)/1.05 var(--display); margin: 0; }
+.recorrido-texto p { color: #D5DEE8; font-size: .97rem; }
+.recorrido-texto .recorrido-fecha { color: var(--niebla); font-size: .88rem; }
+.recorrido-texto .boton { justify-self: start; margin-top: .3rem; background: var(--papel); color: var(--tinta); border-color: var(--papel); }
+.recorrido-texto .boton:hover { background: var(--niebla); border-color: var(--niebla); }
+.recorrido-qr { margin: 0; padding: 1.4rem 1.6rem 1.4rem 0; display: grid; gap: .55rem; justify-items: center; text-align: center; width: 11.5rem; }
+.recorrido-qr img { width: 8.4rem; height: 8.4rem; background: #fff; padding: .3rem; image-rendering: pixelated; }
+.recorrido-qr figcaption { font-size: .78rem; line-height: 1.35; color: var(--niebla); }
+@media (min-width: 901px) { .galeria[data-n="3"] { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 900px) {
+  .sociedades-lista { grid-template-columns: 1fr; max-width: 34rem; }
+  .soc-razon.vacia { display: none; }
+  .recorrido { grid-template-columns: 1fr; }
+  .recorrido > img { min-height: 0; }
+  .recorrido-texto { padding: 1.4rem 1.2rem 1.7rem; }
+  .recorrido-qr { display: none; }
+}
+
 /* ---------- pantallas medianas y celular */
 @media (max-width: 1080px) {
   .menu { display: none; }
@@ -294,7 +341,7 @@ dialog.ficha::backdrop { background: rgba(15, 28, 46, .72); }
       <div class="portada-texto">
         <p class="ceja">Arquitectura y construcción · CDMX y Morelos</p>
         <h1 id="titulo-portada">Diseñamos, construimos y <em>remodelamos</em>.</h1>
-        <p class="portada-lead">Casas, hospedaje, hospitales y espacios públicos: del anteproyecto a la entrega de la obra, con supervisión en sitio y reporte de avance para cada cliente.</p>
+        <p class="portada-lead">Vivienda, conjuntos habitacionales, hospedaje, salud, urbanización y obra pública: del anteproyecto a la entrega de la obra, con supervisión en sitio y reporte de avance para cada cliente.</p>
         <div class="acciones">
           <a class="boton boton-lleno" href="https://wa.me/527775114267" rel="noopener">Cotizar por WhatsApp</a>
           <a class="boton boton-linea" href="#obras">Ver obras</a>
@@ -305,7 +352,7 @@ dialog.ficha::backdrop { background: rgba(15, 28, 46, .72); }
         <figcaption>Albergue Alpino Ajusco · iluminación LED en la estancia principal</figcaption>
       </figure>
       <ul class="datos" style="grid-column: 1 / -1;">
-        <li><strong>Zona de trabajo</strong><span>Ciudad de México y Morelos</span></li>
+        <li><strong>Zona de trabajo</strong><span>Ciudad de México, Morelos, Estado de México y Tlaxcala</span></li>
         <li><strong>Alcance</strong><span>Del anteproyecto a la entrega</span></li>
         <li><strong>Seguimiento</strong><span>Bitácora y reporte fotográfico en cada obra</span></li>
       </ul>
@@ -319,9 +366,9 @@ dialog.ficha::backdrop { background: rgba(15, 28, 46, .72); }
           <p class="ceja">Obras</p>
           <h2 id="titulo-obras">Obras y proyectos</h2>
         </div>
-        <p>Una selección de trabajos en vivienda, hospedaje, salud y obra pública. Abra cada obra para ver el proceso y el resultado.</p>
+        <p>Una selección de trabajos en vivienda, hospedaje, salud, obra pública, urbanización y proyectos de diseño. Abra cada obra para ver el proceso y el resultado.</p>
       </div>
-      <div class="filtros" role="group" aria-label="Filtrar obras por sector"><button type="button" class="filtro" data-filtro="todas" aria-pressed="true">Todas <span class="filtro-n">10</span></button><button type="button" class="filtro" data-filtro="vivienda" aria-pressed="false">Vivienda <span class="filtro-n">4</span></button><button type="button" class="filtro" data-filtro="hospedaje" aria-pressed="false">Hospedaje <span class="filtro-n">1</span></button><button type="button" class="filtro" data-filtro="publica" aria-pressed="false">Obra pública y salud <span class="filtro-n">4</span></button><button type="button" class="filtro" data-filtro="diseno" aria-pressed="false">Diseño <span class="filtro-n">1</span></button></div>
+      <div class="filtros" role="group" aria-label="Filtrar obras por sector"><button type="button" class="filtro" data-filtro="todas" aria-pressed="true">Todas <span class="filtro-n">18</span></button><button type="button" class="filtro" data-filtro="vivienda" aria-pressed="false">Vivienda <span class="filtro-n">4</span></button><button type="button" class="filtro" data-filtro="hospedaje" aria-pressed="false">Hospedaje <span class="filtro-n">1</span></button><button type="button" class="filtro" data-filtro="publica" aria-pressed="false">Obra pública y salud <span class="filtro-n">4</span></button><button type="button" class="filtro" data-filtro="urbanizacion" aria-pressed="false">Urbanización y obra civil <span class="filtro-n">5</span></button><button type="button" class="filtro" data-filtro="diseno" aria-pressed="false">Diseño <span class="filtro-n">4</span></button></div>
       <div class="obras-cuerpo">
         <ol class="indice">
           <li class="fila" data-sector="publica">
@@ -423,14 +470,102 @@ dialog.ficha::backdrop { background: rgba(15, 28, 46, .72); }
               <span class="fila-flecha" aria-hidden="true">→</span>
             </a>
           </li>
+          <li class="fila" data-sector="urbanizacion">
+            <a class="fila-enlace" href="#calle-5-de-mayo" data-id="calle-5-de-mayo">
+              <span class="fila-num">10</span>
+              <span class="fila-cuerpo">
+                <span class="fila-nombre">Calle 5 de Mayo</span>
+                <span class="fila-meta">Repavimentación con concreto hidráulico <span aria-hidden="true">·</span> Jiutepec, Morelos</span>
+              </span>
+              <img class="fila-mini" src="img/calle-5-de-mayo-mini.jpg" width="360" height="333" alt="" loading="lazy" decoding="async">
+              <span class="fila-flecha" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="fila" data-sector="urbanizacion">
+            <a class="fila-enlace" href="#jardin-juarez" data-id="jardin-juarez">
+              <span class="fila-num">11</span>
+              <span class="fila-cuerpo">
+                <span class="fila-nombre">Jardín Juárez</span>
+                <span class="fila-meta">Red de aguas negras <span aria-hidden="true">·</span> Jiutepec, Morelos</span>
+              </span>
+              <img class="fila-mini" src="img/jardin-juarez-mini.jpg" width="360" height="333" alt="" loading="lazy" decoding="async">
+              <span class="fila-flecha" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="fila" data-sector="urbanizacion">
+            <a class="fila-enlace" href="#las-torres" data-id="las-torres">
+              <span class="fila-num">12</span>
+              <span class="fila-cuerpo">
+                <span class="fila-nombre">Las Torres</span>
+                <span class="fila-meta">Acceso y salida de puente vehicular <span aria-hidden="true">·</span> Chimalhuacán, Edo. Méx. · Circuito Exterior</span>
+              </span>
+              <img class="fila-mini" src="img/las-torres-mini.jpg" width="360" height="334" alt="" loading="lazy" decoding="async">
+              <span class="fila-flecha" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="fila" data-sector="urbanizacion">
+            <a class="fila-enlace" href="#sanofi-proyecto-azteca" data-id="sanofi-proyecto-azteca">
+              <span class="fila-num">13</span>
+              <span class="fila-cuerpo">
+                <span class="fila-nombre">Sanofi · Proyecto Azteca</span>
+                <span class="fila-meta">Demolición y cimentación <span aria-hidden="true">·</span> Cuautitlán Izcalli, Estado de México</span>
+              </span>
+              <img class="fila-mini" src="img/sanofi-proyecto-azteca-mini.jpg" width="360" height="333" alt="" loading="lazy" decoding="async">
+              <span class="fila-flecha" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="fila" data-sector="urbanizacion">
+            <a class="fila-enlace" href="#loligas" data-id="loligas">
+              <span class="fila-num">14</span>
+              <span class="fila-cuerpo">
+                <span class="fila-nombre">Loligas</span>
+                <span class="fila-meta">Excavación para tanques y nivelación <span aria-hidden="true">·</span> Tlaxcala</span>
+              </span>
+              <img class="fila-mini" src="img/loligas-mini.jpg" width="360" height="333" alt="" loading="lazy" decoding="async">
+              <span class="fila-flecha" aria-hidden="true">→</span>
+            </a>
+          </li>
           <li class="fila" data-sector="diseno">
             <a class="fila-enlace" href="#club-51" data-id="club-51">
-              <span class="fila-num">10</span>
+              <span class="fila-num">15</span>
               <span class="fila-cuerpo">
                 <span class="fila-nombre">Hotel Boutique Club 51</span>
                 <span class="fila-meta">Proyecto arquitectónico de 28 suites <span aria-hidden="true">·</span> Torre Mayor, Ciudad de México</span>
               </span>
-              <img class="fila-mini" src="img/club-51-mini.jpg" width="326" height="360" alt="" loading="lazy" decoding="async">
+              <img class="fila-mini" src="img/club-51-mini.jpg" width="326" height="360" alt="" loading="lazy" decoding="async" style="object-position: 50% 100%">
+              <span class="fila-flecha" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="fila" data-sector="diseno">
+            <a class="fila-enlace" href="#conjunto-tecuezcontitla" data-id="conjunto-tecuezcontitla">
+              <span class="fila-num">16</span>
+              <span class="fila-cuerpo">
+                <span class="fila-nombre">Conjunto habitacional Tecuezcontitla</span>
+                <span class="fila-meta">Anteproyecto de conjunto habitacional <span aria-hidden="true">·</span> Tepoztlán, Morelos</span>
+              </span>
+              <img class="fila-mini" src="img/conjunto-tecuezcontitla-mini.jpg" width="360" height="243" alt="" loading="lazy" decoding="async">
+              <span class="fila-flecha" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="fila" data-sector="diseno">
+            <a class="fila-enlace" href="#condominios-y-departamentos" data-id="condominios-y-departamentos">
+              <span class="fila-num">17</span>
+              <span class="fila-cuerpo">
+                <span class="fila-nombre">Condominios y departamentos</span>
+                <span class="fila-meta">Proyectos arquitectónicos de vivienda multifamiliar</span>
+              </span>
+              <img class="fila-mini" src="img/condominios-y-departamentos-mini.jpg" width="360" height="203" alt="" loading="lazy" decoding="async" style="object-position: 33% 50%">
+              <span class="fila-flecha" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="fila" data-sector="diseno">
+            <a class="fila-enlace" href="#usos-mixtos-corporativo-y-salud" data-id="usos-mixtos-corporativo-y-salud">
+              <span class="fila-num">18</span>
+              <span class="fila-cuerpo">
+                <span class="fila-nombre">Usos mixtos, corporativo y salud</span>
+                <span class="fila-meta">Proyectos arquitectónicos de edificios de mayor escala</span>
+              </span>
+              <img class="fila-mini" src="img/usos-mixtos-corporativo-y-salud-mini.jpg" width="360" height="180" alt="" loading="lazy" decoding="async" style="object-position: 35% 50%">
               <span class="fila-flecha" aria-hidden="true">→</span>
             </a>
           </li>
@@ -460,6 +595,17 @@ dialog.ficha::backdrop { background: rgba(15, 28, 46, .72); }
         <li><span class="n">02</span><h3>Construcción</h3><p>Ejecución de obra con supervisión técnica y control de calidad, de la obra negra a los acabados.</p></li>
         <li><span class="n">03</span><h3>Remodelación y rehabilitación</h3><p>Renovación integral o parcial de casas, comercios y edificios públicos: demolición, obra nueva y acabados.</p></li>
         <li><span class="n">04</span><h3>Interiores y acabados</h3><p>Diseño interior, acabados y carpintería para estancias, recámaras, baños, cocinas y áreas de hospedaje.</p></li>
+      </ol>
+      <div class="servicios-sub" id="mayor-escala">
+        <p class="ceja">Mayor escala</p>
+        <h3>Conjuntos, condominios y urbanización</h3>
+        <p>Cuatro líneas de trabajo para desarrollos habitacionales y obra de mayor escala.</p>
+      </div>
+      <ol class="servicios-lista" start="5">
+        <li><span class="n">05</span><h3>Conjuntos habitacionales</h3><p>Proyecto y construcción de vivienda en conjunto, con edificación en serie y obra por etapas.</p><p class="servicios-ref"><span>Ver</span> <a href="#conjunto-tecuezcontitla">Conjunto Tecuezcontitla</a> <span aria-hidden="true">·</span> <a href="#albergue-ajusco">Albergue Alpino Ajusco (32 cabañas)</a></p></li>
+        <li><span class="n">06</span><h3>Condominios y departamentos</h3><p>Proyecto arquitectónico de edificios de departamentos, privadas residenciales y usos mixtos.</p><p class="servicios-ref"><span>Ver</span> <a href="#condominios-y-departamentos">Condominios y departamentos</a> <span aria-hidden="true">·</span> <a href="#usos-mixtos-corporativo-y-salud">Usos mixtos, corporativo y salud</a></p></li>
+        <li><span class="n">07</span><h3>Urbanización</h3><p>Pavimentos de concreto hidráulico, guarniciones, banquetas y redes de drenaje sanitario.</p><p class="servicios-ref"><span>Ver</span> <a href="#calle-5-de-mayo">Calle 5 de Mayo</a> <span aria-hidden="true">·</span> <a href="#jardin-juarez">Jardín Juárez</a></p></li>
+        <li><span class="n">08</span><h3>Terracerías y obra civil</h3><p>Demoliciones, plataformas, excavaciones y cimentaciones con maquinaria pesada y control de seguridad.</p><p class="servicios-ref"><span>Ver</span> <a href="#sanofi-proyecto-azteca">Sanofi · Proyecto Azteca</a> <span aria-hidden="true">·</span> <a href="#loligas">Loligas</a> <span aria-hidden="true">·</span> <a href="#las-torres">Las Torres</a></p></li>
       </ol>
       <div class="eco">
         <div class="eco-cabeza">
@@ -529,7 +675,7 @@ dialog.ficha::backdrop { background: rgba(15, 28, 46, .72); }
       </div>
       <div class="nosotros-cuerpo">
         <div class="nosotros-texto">
-          <p class="nosotros-lead">ADCO Arquitectos desarrolla proyectos de arquitectura, diseño, construcción y remodelación para clientes particulares, empresas y el sector público, del anteproyecto a la entrega de la obra.</p>
+          <p class="nosotros-lead">ADCO Arquitectos desarrolla proyectos de arquitectura, diseño, construcción y remodelación, así como urbanización y obra civil, para clientes particulares, empresas y el sector público, del anteproyecto a la entrega de la obra.</p>
           <div class="mision">
             <div><p class="ceja">Misión</p><p>Generar un impacto social mediante nuestros procesos de gestión y operación, promoviendo el desarrollo integral de nuestros trabajadores y la búsqueda permanente de la excelencia a través de la innovación.</p></div>
             <div><p class="ceja">Visión</p><p>Ser reconocidos como una empresa líder en construcción, con un equipo unido, comprometido con la innovación, la calidad y los entornos de trabajo seguros.</p></div>
@@ -539,6 +685,35 @@ dialog.ficha::backdrop { background: rgba(15, 28, 46, .72); }
           <img src="img/nosotros.jpg" width="735" height="693" alt="Estancia con chimenea de doble vista en el Hotel Casa Fernanda" loading="lazy" decoding="async">
           <figcaption>Hotel Casa Fernanda · Tepoztlán, Morelos</figcaption>
         </figure>
+      </div>
+      <div class="sociedades" id="sociedades" aria-labelledby="titulo-sociedades">
+        <div class="sociedades-cabeza">
+          <h3 id="titulo-sociedades">Sociedades</h3>
+          <p>Empresas con las que ADCO trabaja en sociedad para obras de mayor escala.</p>
+        </div>
+        <ul class="sociedades-lista">
+          <li>
+            <p class="ceja">Querétaro</p>
+            <h4>ASOINCO</h4>
+            <p class="soc-razon">Asesoría en Ingeniería de Construcción, S.C.</p>
+            <div class="soc-fotos"><img src="img/sociedad-1-11.jpg" width="408" height="306" alt="Trabajo de ASOINCO" loading="lazy" decoding="async"><img src="img/sociedad-1-12.jpg" width="359" height="248" alt="Trabajo de ASOINCO" loading="lazy" decoding="async"><img src="img/sociedad-1-21.jpg" width="440" height="328" alt="Trabajo de ASOINCO" loading="lazy" decoding="async"><img src="img/sociedad-1-22.jpg" width="523" height="276" alt="Trabajo de ASOINCO" loading="lazy" decoding="async"></div>
+            <p class="soc-pie">Edificación con cimbra metálica, prototipo de vivienda y vialidades.</p>
+          </li>
+          <li>
+            <p class="ceja">Puebla</p>
+            <h4>SEDIS Construcciones</h4>
+            <p class="soc-razon vacia">&nbsp;</p>
+            <div class="soc-fotos"><img class="ancha" src="img/sociedad-2-11.jpg" width="534" height="404" alt="Trabajo de SEDIS Construcciones" loading="lazy" decoding="async" style="object-position: 50% 55%"><img src="img/sociedad-2-21.jpg" width="534" height="291" alt="Trabajo de SEDIS Construcciones" loading="lazy" decoding="async"><img src="img/sociedad-2-22.jpg" width="518" height="291" alt="Trabajo de SEDIS Construcciones" loading="lazy" decoding="async"></div>
+            <p class="soc-pie">Hangares, pavimentos y obra residencial.</p>
+          </li>
+          <li>
+            <p class="ceja">Ciudad de México</p>
+            <h4>Grupo Constructor EJA</h4>
+            <p class="soc-razon">Grupo Constructor EJA, S.A. de C.V.</p>
+            <div class="soc-fotos"><img class="ancha" src="img/sociedad-3-11.jpg" width="885" height="303" alt="Trabajo de Grupo Constructor EJA" loading="lazy" decoding="async"><img src="img/sociedad-3-21.jpg" width="884" height="498" alt="Trabajo de Grupo Constructor EJA" loading="lazy" decoding="async"><img src="img/sociedad-3-22.jpg" width="884" height="498" alt="Trabajo de Grupo Constructor EJA" loading="lazy" decoding="async"></div>
+            <p class="soc-pie">Cimentaciones y edificación institucional: Tribunal Superior de Justicia.</p>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
@@ -553,7 +728,7 @@ dialog.ficha::backdrop { background: rgba(15, 28, 46, .72); }
           <div><dt>WhatsApp</dt><dd><a href="https://wa.me/527775114267" rel="noopener">(777) 511-42-67</a></dd></div>
           <div><dt>Correo</dt><dd><a href="mailto:alonzo@adcoarquitectos.com">alonzo@adcoarquitectos.com</a></dd></div>
           <div><dt>Oficina</dt><dd>Prolongación Miguel Hidalgo 198, Col. Chamilpa, C.P. 62210, Cuernavaca, Morelos</dd></div>
-          <div><dt>Zona de trabajo</dt><dd>Ciudad de México y Morelos</dd></div>
+          <div><dt>Zona de trabajo</dt><dd>Ciudad de México, Morelos, Estado de México y Tlaxcala</dd></div>
         </dl>
       </div>
       <form class="formulario" id="formulario" novalidate>
@@ -565,8 +740,10 @@ dialog.ficha::backdrop { background: rgba(15, 28, 46, .72); }
             <option>Casa nueva</option>
             <option>Remodelación</option>
             <option>Interiores y acabados</option>
+            <option>Conjunto habitacional o condominio</option>
             <option>Comercio u oficina</option>
             <option>Obra pública o institucional</option>
+            <option>Urbanización u obra civil</option>
             <option>Renta de generadores</option>
             <option>Otro</option>
           </select>
@@ -596,6 +773,7 @@ dialog.ficha::backdrop { background: rgba(15, 28, 46, .72); }
     <p class="ficha-desc" id="ficha-desc"></p>
     <dl class="ficha-datos" id="ficha-datos"></dl>
     <div class="galeria" id="ficha-galeria"></div>
+    <div class="recorrido" id="ficha-recorrido" hidden></div>
   </div>
   <nav class="ficha-nav" aria-label="Otras obras">
     <button type="button" id="ficha-ant"></button>
@@ -603,7 +781,7 @@ dialog.ficha::backdrop { background: rgba(15, 28, 46, .72); }
   </nav>
 </dialog>
 
-<script id="datos-obras" type="application/json">[{"id":"albergue-ajusco","num":"01","nombre":"Albergue Alpino Ajusco","sector":"publica","sectorNombre":"Obra pública y salud","tipo":"Rehabilitación de albergue y cabañas","ubicacion":"Parque Natural Volcán Ajusco, CDMX","servicio":"Construcción y rehabilitación","alcance":"Recubrimiento epóxico, iluminación LED y cabañas","descripcion":"Recubrimiento epóxico en cocina, alberca termal, fuente y asadores; iluminación indirecta con tira LED en las vigas de la estancia principal, y ensamble de cabañas.","portada":{"src":"img/albergue-ajusco-portada.jpg","w":1400,"h":787},"mini":{"src":"img/albergue-ajusco-mini.jpg","w":360,"h":202},"fotos":[{"src":"img/albergue-ajusco-01.jpg","w":1067,"h":600,"etiqueta":"ILUMINACIÓN LED","pie":"Tira LED en las vigas de la estancia principal"},{"src":"img/albergue-ajusco-02.jpg","w":989,"h":1600,"etiqueta":"RECUBRIMIENTO EPÓXICO","pie":"Mesas y bancas de la zona de asadores"},{"src":"img/albergue-ajusco-03.jpg","w":576,"h":789,"etiqueta":"RECUBRIMIENTO EPÓXICO","pie":"Fuente ornamental con acabado hojuelado"},{"src":"img/albergue-ajusco-04.jpg","w":1600,"h":900,"etiqueta":"EN OBRA","pie":"Aplicación del epóxico en el vaso de la alberca"},{"src":"img/albergue-ajusco-05.jpg","w":1161,"h":653,"etiqueta":"TERMINADO","pie":"Alberca termal con vaso epóxico y forro de duela"},{"src":"img/albergue-ajusco-06.jpg","w":900,"h":1600,"etiqueta":"CABAÑAS","pie":"Cabaña con duela, aceite y techumbre de lámina"}]},{"id":"casa-su-03","num":"02","nombre":"Casa SU-03","sector":"vivienda","sectorNombre":"Vivienda","tipo":"Diseño y construcción de casa habitación","ubicacion":"Jiutepec, Morelos","servicio":"Diseño arquitectónico + Construcción","alcance":"Obra negra, acabados e interiores","descripcion":"Proyecto integral, del diseño a la obra: estructura, patio interior, escalera con muro de piedra y espacios terminados.","portada":{"src":"img/casa-su-03-portada.jpg","w":1034,"h":958},"mini":{"src":"img/casa-su-03-mini.jpg","w":360,"h":334},"fotos":[{"src":"img/casa-su-03-01.jpg","w":810,"h":780,"etiqueta":"OBRA NEGRA","pie":"Estructura y muros en proceso"},{"src":"img/casa-su-03-02.jpg","w":768,"h":738,"etiqueta":"ACABADOS","pie":"Escalera y muro de piedra en proceso"},{"src":"img/casa-su-03-03.jpg","w":864,"h":1152,"etiqueta":"TERMINADO","pie":"Escalera y doble altura"},{"src":"img/casa-su-03-04.jpg","w":1280,"h":911,"etiqueta":"TERMINADO","pie":"Ventanal hacia el patio interior"},{"src":"img/casa-su-03-05.jpg","w":618,"h":627,"etiqueta":"TERMINADO","pie":"Cocina"},{"src":"img/casa-su-03-06.jpg","w":1280,"h":1280,"etiqueta":"TERMINADO","pie":"Terraza con asador"}]},{"id":"casa-aj8","num":"03","nombre":"Casa AJ8","sector":"vivienda","sectorNombre":"Vivienda","tipo":"Remodelación integral de casa habitación","ubicacion":"Cuernavaca, Morelos","servicio":"Remodelación residencial","alcance":"Fachadas, interiores, baños, cocina y jardín","descripcion":"Renovación completa de una casa existente: fachadas, sala, comedor, cocina, recámaras, baños, terrazas y jardín.","portada":{"src":"img/casa-aj8-portada.jpg","w":1400,"h":697},"mini":{"src":"img/casa-aj8-mini.jpg","w":360,"h":179},"fotos":[{"src":"img/casa-aj8-01.jpg","w":710,"h":481,"etiqueta":"ANTES","pie":"Fachada exterior"},{"src":"img/casa-aj8-02.jpg","w":1436,"h":812,"etiqueta":"ANTES","pie":"Sala"},{"src":"img/casa-aj8-03.jpg","w":1028,"h":736,"etiqueta":"ANTES","pie":"Comedor"},{"src":"img/casa-aj8-04.jpg","w":890,"h":647,"etiqueta":"DESPUÉS","pie":"Fachada exterior"},{"src":"img/casa-aj8-05.jpg","w":953,"h":685,"etiqueta":"DESPUÉS","pie":"Sala"},{"src":"img/casa-aj8-06.jpg","w":1024,"h":753,"etiqueta":"DESPUÉS","pie":"Comedor"},{"src":"img/casa-aj8-07.jpg","w":1202,"h":784,"etiqueta":"ANTES","pie":"Cocina"},{"src":"img/casa-aj8-08.jpg","w":1077,"h":808,"etiqueta":"ANTES","pie":"Baño de recámara principal"},{"src":"img/casa-aj8-09.jpg","w":1015,"h":761,"etiqueta":"ANTES","pie":"Recámara principal"},{"src":"img/casa-aj8-10.jpg","w":678,"h":576,"etiqueta":"DESPUÉS","pie":"Cocina"},{"src":"img/casa-aj8-11.jpg","w":1024,"h":768,"etiqueta":"DESPUÉS","pie":"Baño de recámara principal"},{"src":"img/casa-aj8-12.jpg","w":888,"h":681,"etiqueta":"DESPUÉS","pie":"Recámara principal"}]},{"id":"hotel-casa-fernanda","num":"04","nombre":"Hotel Casa Fernanda","sector":"hospedaje","sectorNombre":"Hospedaje","tipo":"Proyecto de hospitalidad","ubicacion":"Tepoztlán, Morelos","servicio":"Diseño y construcción","alcance":"Habitaciones, spa, lounge y terraza","descripcion":"Diseño y construcción de espacios para hospedaje: habitaciones, cabina de spa, lounge con chimenea y terraza con vista a la sierra.","portada":{"src":"img/hotel-casa-fernanda-portada.jpg","w":691,"h":640},"mini":{"src":"img/hotel-casa-fernanda-mini.jpg","w":360,"h":333},"fotos":[{"src":"img/hotel-casa-fernanda-01.jpg","w":548,"h":527,"etiqueta":"SPA","pie":"Cabina de masaje"},{"src":"img/hotel-casa-fernanda-02.jpg","w":720,"h":693,"etiqueta":"LOUNGE","pie":"Sala con chimenea de doble vista"},{"src":"img/hotel-casa-fernanda-03.jpg","w":729,"h":702,"etiqueta":"TERRAZA","pie":"Vista a la sierra de Tepoztlán"},{"src":"img/hotel-casa-fernanda-04.jpg","w":696,"h":640,"etiqueta":"EXTERIOR","pie":"Habitación con terraza y jardín"},{"src":"img/hotel-casa-fernanda-05.jpg","w":517,"h":690,"etiqueta":"CIRCULACIÓN","pie":"Escalera con muro de piedra"},{"src":"img/hotel-casa-fernanda-06.jpg","w":977,"h":733,"etiqueta":"SALA","pie":"Área de estar"}]},{"id":"casa-atlamaya","num":"05","nombre":"Casa Atlamaya","sector":"vivienda","sectorNombre":"Vivienda","tipo":"Diseño y remodelación de vivienda existente","ubicacion":"Ciudad de México","servicio":"Diseño y construcción","alcance":"Demolición, instalaciones, acabados e interiores","descripcion":"Intervención en una vivienda existente, con registro del estado inicial, el proceso de obra y los espacios terminados.","portada":{"src":"img/casa-atlamaya-portada.jpg","w":869,"h":652},"mini":{"src":"img/casa-atlamaya-mini.jpg","w":360,"h":270},"fotos":[{"src":"img/casa-atlamaya-01.jpg","w":719,"h":746,"etiqueta":"ANTES","pie":"Fachada, estado inicial"},{"src":"img/casa-atlamaya-02.jpg","w":772,"h":579,"etiqueta":"PROCESO","pie":"Interior en obra"},{"src":"img/casa-atlamaya-03.jpg","w":934,"h":707,"etiqueta":"PROCESO","pie":"Instalaciones"},{"src":"img/casa-atlamaya-04.jpg","w":862,"h":652,"etiqueta":"DESPUÉS","pie":"Comedor"},{"src":"img/casa-atlamaya-05.jpg","w":869,"h":652,"etiqueta":"DESPUÉS","pie":"Sala"},{"src":"img/casa-atlamaya-06.jpg","w":629,"h":606,"etiqueta":"DESPUÉS","pie":"Recámara"}]},{"id":"verificentro","num":"06","nombre":"Verificentro Gobernadores","sector":"publica","sectorNombre":"Obra pública y salud","tipo":"Remodelación de centro de verificación","ubicacion":"Cuernavaca, Morelos","servicio":"Remodelación y obra civil","alcance":"Accesos, techumbre, islas y líneas de verificación","descripcion":"Remodelación completa del inmueble: fachada, accesos con rampa, techumbre metálica y área de verificación.","portada":{"src":"img/verificentro-portada.jpg","w":1280,"h":720},"mini":{"src":"img/verificentro-mini.jpg","w":360,"h":203},"fotos":[{"src":"img/verificentro-01.jpg","w":1032,"h":774,"etiqueta":"ANTES","pie":"Predio al inicio de los trabajos"},{"src":"img/verificentro-02.jpg","w":1280,"h":960,"etiqueta":"PROCESO","pie":"Estructura de la techumbre"},{"src":"img/verificentro-03.jpg","w":1024,"h":768,"etiqueta":"DESPUÉS","pie":"Líneas de verificación terminadas"}]},{"id":"casa-pedregal","num":"07","nombre":"Casa Pedregal","sector":"vivienda","sectorNombre":"Vivienda","tipo":"Proyecto residencial con énfasis en interiores","ubicacion":"Ciudad de México","servicio":"Diseño y construcción","alcance":"Interiores, acabados y carpintería","descripcion":"Vivienda con énfasis en el diseño interior: estancia, recámara y detalles de carpintería en tonos oscuros y neutros.","portada":{"src":"img/casa-pedregal-portada.jpg","w":678,"h":628},"mini":{"src":"img/casa-pedregal-mini.jpg","w":360,"h":333},"fotos":[{"src":"img/casa-pedregal-01.jpg","w":760,"h":732,"etiqueta":"ESTANCIA","pie":"Sala con acabados en tonos neutros"},{"src":"img/casa-pedregal-02.jpg","w":458,"h":441,"etiqueta":"DETALLE","pie":"Interiores en tonos oscuros"},{"src":"img/casa-pedregal-03.jpg","w":475,"h":457,"etiqueta":"CARPINTERÍA","pie":"Puerta y herrajes"}]},{"id":"hospital-mujer","num":"08","nombre":"Hospital de la Mujer","sector":"publica","sectorNombre":"Obra pública y salud","tipo":"Rehabilitación de fachadas e interiores","ubicacion":"Yautepec, Morelos","servicio":"Rehabilitación y mantenimiento","alcance":"Fachadas, reparación de muros, plafones y pintura","descripcion":"Trabajos de rehabilitación en el exterior y el interior del hospital, con registro del estado inicial y final.","portada":{"src":"img/hospital-mujer-portada.jpg","w":1280,"h":960},"mini":{"src":"img/hospital-mujer-mini.jpg","w":360,"h":270},"fotos":[{"src":"img/hospital-mujer-01.jpg","w":720,"h":1280,"etiqueta":"ANTES","pie":"Daño en muro"},{"src":"img/hospital-mujer-02.jpg","w":1280,"h":960,"etiqueta":"DESPUÉS","pie":"Fachada rehabilitada"},{"src":"img/hospital-mujer-03.jpg","w":864,"h":1152,"etiqueta":"DESPUÉS","pie":"Pasillo interior"}]},{"id":"hospital-temixco","num":"09","nombre":"Hospital General de Temixco","sector":"publica","sectorNombre":"Obra pública y salud","tipo":"Rehabilitación de fachada y accesos","ubicacion":"Temixco, Morelos","servicio":"Rehabilitación y mantenimiento","alcance":"Fachada, letrero, acceso principal y pintura","descripcion":"Hospital General «Enf. María de la Luz Delgado Morales»: rehabilitación de la fachada y del acceso principal.","portada":{"src":"img/hospital-temixco-portada.jpg","w":1280,"h":589},"mini":{"src":"img/hospital-temixco-mini.jpg","w":360,"h":165},"fotos":[{"src":"img/hospital-temixco-01.jpg","w":1280,"h":960,"etiqueta":"ANTES","pie":"Letrero de fachada"},{"src":"img/hospital-temixco-02.jpg","w":1280,"h":960,"etiqueta":"DESPUÉS","pie":"Acceso principal"},{"src":"img/hospital-temixco-03.jpg","w":1280,"h":960,"etiqueta":"DESPUÉS","pie":"Escalinata y rampa"}]},{"id":"club-51","num":"10","nombre":"Hotel Boutique Club 51","sector":"diseno","sectorNombre":"Diseño","tipo":"Proyecto arquitectónico de 28 suites","ubicacion":"Torre Mayor, Ciudad de México","servicio":"Proyecto arquitectónico e interiores","alcance":"28 suites en 1,992 m²","descripcion":"Distribución de 14 suites estándar, 10 master y 4 dobles, con recepción, circulaciones y áreas de servicio.","portada":{"src":"img/club-51-portada.jpg","w":1267,"h":1400},"mini":{"src":"img/club-51-mini.jpg","w":326,"h":360},"fotos":[{"src":"img/club-51-01.jpg","w":1280,"h":682,"etiqueta":"ZONIFICACIÓN","pie":"Distribución de los tres tipos de suite"},{"src":"img/club-51-02.jpg","w":1600,"h":800,"etiqueta":"SUITE ESTÁNDAR","pie":"Planta amueblada de 30.68 m²"},{"src":"img/club-51-03.jpg","w":1600,"h":1549,"etiqueta":"SUITE MASTER","pie":"Axonométrico con terraza y jacuzzi"}]}]</script>
+<script id="datos-obras" type="application/json">[{"id":"albergue-ajusco","num":"01","nombre":"Albergue Alpino Ajusco","sector":"publica","sectorNombre":"Obra pública y salud","tipo":"Rehabilitación de albergue y cabañas","ubicacion":"Parque Natural Volcán Ajusco, CDMX","servicio":"Construcción y rehabilitación","alcance":"Recubrimiento epóxico, iluminación LED y cabañas","descripcion":"Recubrimiento epóxico en cocina, alberca termal, fuente y asadores; iluminación indirecta con tira LED en las vigas de la estancia principal, y ensamble de cabañas.","portada":{"src":"img/albergue-ajusco-portada.jpg","w":1400,"h":787,"pos":""},"mini":{"src":"img/albergue-ajusco-mini.jpg","w":360,"h":202,"pos":""},"fotos":[{"src":"img/albergue-ajusco-01.jpg","w":1067,"h":600,"etiqueta":"ILUMINACIÓN LED","pie":"Tira LED en las vigas de la estancia principal","pos":""},{"src":"img/albergue-ajusco-02.jpg","w":989,"h":1600,"etiqueta":"RECUBRIMIENTO EPÓXICO","pie":"Mesas y bancas de la zona de asadores","pos":"50% 62%"},{"src":"img/albergue-ajusco-03.jpg","w":576,"h":789,"etiqueta":"RECUBRIMIENTO EPÓXICO","pie":"Fuente ornamental con acabado hojuelado","pos":"50% 70%"},{"src":"img/albergue-ajusco-04.jpg","w":1600,"h":900,"etiqueta":"EN OBRA","pie":"Aplicación del epóxico en el vaso de la alberca","pos":""},{"src":"img/albergue-ajusco-05.jpg","w":1161,"h":653,"etiqueta":"TERMINADO","pie":"Alberca termal con vaso epóxico y forro de duela","pos":"45% 50%"},{"src":"img/albergue-ajusco-06.jpg","w":900,"h":1600,"etiqueta":"CABAÑAS","pie":"Cabaña con duela, aceite y techumbre de lámina","pos":"50% 55%"}],"recorrido":{"titulo":"Recorrido aéreo con dron","texto":"Vista aérea con dron del Albergue Alpino Ajusco — conjunto edificado en el Parque Natural Volcán Ajusco.","fecha":"Álbum de video · 14 de octubre de 2026","url":"https://photos.app.goo.gl/zUwvw8fy2qXMR6fo7","alt":"Vista aérea con dron del Albergue Alpino Ajusco","foto":{"src":"img/albergue-ajusco-recorrido.jpg","w":972,"h":900},"qr":"img/albergue-ajusco-recorrido-qr.png"}},{"id":"casa-su-03","num":"02","nombre":"Casa SU-03","sector":"vivienda","sectorNombre":"Vivienda","tipo":"Diseño y construcción de casa habitación","ubicacion":"Jiutepec, Morelos","servicio":"Diseño arquitectónico + Construcción","alcance":"Obra negra, acabados e interiores","descripcion":"Proyecto integral, del diseño a la obra: estructura, patio interior, escalera con muro de piedra y espacios terminados.","portada":{"src":"img/casa-su-03-portada.jpg","w":1034,"h":958,"pos":""},"mini":{"src":"img/casa-su-03-mini.jpg","w":360,"h":334,"pos":""},"fotos":[{"src":"img/casa-su-03-01.jpg","w":810,"h":780,"etiqueta":"OBRA NEGRA","pie":"Estructura y muros en proceso","pos":""},{"src":"img/casa-su-03-02.jpg","w":768,"h":738,"etiqueta":"ACABADOS","pie":"Escalera y muro de piedra en proceso","pos":""},{"src":"img/casa-su-03-03.jpg","w":864,"h":1152,"etiqueta":"TERMINADO","pie":"Escalera y doble altura","pos":""},{"src":"img/casa-su-03-04.jpg","w":1280,"h":911,"etiqueta":"TERMINADO","pie":"Ventanal hacia el patio interior","pos":""},{"src":"img/casa-su-03-05.jpg","w":618,"h":627,"etiqueta":"TERMINADO","pie":"Cocina","pos":""},{"src":"img/casa-su-03-06.jpg","w":1280,"h":1280,"etiqueta":"TERMINADO","pie":"Terraza con asador","pos":""}],"recorrido":null},{"id":"casa-aj8","num":"03","nombre":"Casa AJ8","sector":"vivienda","sectorNombre":"Vivienda","tipo":"Remodelación integral de casa habitación","ubicacion":"Cuernavaca, Morelos","servicio":"Remodelación residencial","alcance":"Fachadas, interiores, baños, cocina y jardín","descripcion":"Renovación completa de una casa existente: fachadas, sala, comedor, cocina, recámaras, baños, terrazas y jardín.","portada":{"src":"img/casa-aj8-portada.jpg","w":1400,"h":697,"pos":""},"mini":{"src":"img/casa-aj8-mini.jpg","w":360,"h":179,"pos":""},"fotos":[{"src":"img/casa-aj8-01.jpg","w":710,"h":481,"etiqueta":"ANTES","pie":"Fachada exterior","pos":""},{"src":"img/casa-aj8-02.jpg","w":1436,"h":812,"etiqueta":"ANTES","pie":"Sala","pos":""},{"src":"img/casa-aj8-03.jpg","w":1028,"h":736,"etiqueta":"ANTES","pie":"Comedor","pos":""},{"src":"img/casa-aj8-04.jpg","w":890,"h":647,"etiqueta":"DESPUÉS","pie":"Fachada exterior","pos":""},{"src":"img/casa-aj8-05.jpg","w":953,"h":685,"etiqueta":"DESPUÉS","pie":"Sala","pos":""},{"src":"img/casa-aj8-06.jpg","w":1024,"h":753,"etiqueta":"DESPUÉS","pie":"Comedor","pos":""},{"src":"img/casa-aj8-07.jpg","w":1202,"h":784,"etiqueta":"ANTES","pie":"Cocina","pos":""},{"src":"img/casa-aj8-08.jpg","w":1077,"h":808,"etiqueta":"ANTES","pie":"Baño de recámara principal","pos":""},{"src":"img/casa-aj8-09.jpg","w":1015,"h":761,"etiqueta":"ANTES","pie":"Recámara principal","pos":""},{"src":"img/casa-aj8-10.jpg","w":678,"h":576,"etiqueta":"DESPUÉS","pie":"Cocina","pos":""},{"src":"img/casa-aj8-11.jpg","w":1024,"h":768,"etiqueta":"DESPUÉS","pie":"Baño de recámara principal","pos":""},{"src":"img/casa-aj8-12.jpg","w":888,"h":681,"etiqueta":"DESPUÉS","pie":"Recámara principal","pos":""}],"recorrido":null},{"id":"hotel-casa-fernanda","num":"04","nombre":"Hotel Casa Fernanda","sector":"hospedaje","sectorNombre":"Hospedaje","tipo":"Proyecto de hospitalidad","ubicacion":"Tepoztlán, Morelos","servicio":"Diseño y construcción","alcance":"Habitaciones, spa, lounge y terraza","descripcion":"Diseño y construcción de espacios para hospedaje: habitaciones, cabina de spa, lounge con chimenea y terraza con vista a la sierra.","portada":{"src":"img/hotel-casa-fernanda-portada.jpg","w":691,"h":640,"pos":""},"mini":{"src":"img/hotel-casa-fernanda-mini.jpg","w":360,"h":333,"pos":""},"fotos":[{"src":"img/hotel-casa-fernanda-01.jpg","w":548,"h":527,"etiqueta":"SPA","pie":"Cabina de masaje","pos":""},{"src":"img/hotel-casa-fernanda-02.jpg","w":720,"h":693,"etiqueta":"LOUNGE","pie":"Sala con chimenea de doble vista","pos":""},{"src":"img/hotel-casa-fernanda-03.jpg","w":729,"h":702,"etiqueta":"TERRAZA","pie":"Vista a la sierra de Tepoztlán","pos":""},{"src":"img/hotel-casa-fernanda-04.jpg","w":696,"h":640,"etiqueta":"EXTERIOR","pie":"Habitación con terraza y jardín","pos":""},{"src":"img/hotel-casa-fernanda-05.jpg","w":517,"h":690,"etiqueta":"CIRCULACIÓN","pie":"Escalera con muro de piedra","pos":""},{"src":"img/hotel-casa-fernanda-06.jpg","w":977,"h":733,"etiqueta":"SALA","pie":"Área de estar","pos":""}],"recorrido":null},{"id":"casa-atlamaya","num":"05","nombre":"Casa Atlamaya","sector":"vivienda","sectorNombre":"Vivienda","tipo":"Diseño y remodelación de vivienda existente","ubicacion":"Ciudad de México","servicio":"Diseño y construcción","alcance":"Demolición, instalaciones, acabados e interiores","descripcion":"Intervención en una vivienda existente, con registro del estado inicial, el proceso de obra y los espacios terminados.","portada":{"src":"img/casa-atlamaya-portada.jpg","w":869,"h":652,"pos":""},"mini":{"src":"img/casa-atlamaya-mini.jpg","w":360,"h":270,"pos":""},"fotos":[{"src":"img/casa-atlamaya-01.jpg","w":719,"h":746,"etiqueta":"ANTES","pie":"Fachada, estado inicial","pos":""},{"src":"img/casa-atlamaya-02.jpg","w":772,"h":579,"etiqueta":"PROCESO","pie":"Interior en obra","pos":""},{"src":"img/casa-atlamaya-03.jpg","w":934,"h":707,"etiqueta":"PROCESO","pie":"Instalaciones","pos":""},{"src":"img/casa-atlamaya-04.jpg","w":862,"h":652,"etiqueta":"DESPUÉS","pie":"Comedor","pos":""},{"src":"img/casa-atlamaya-05.jpg","w":869,"h":652,"etiqueta":"DESPUÉS","pie":"Sala","pos":""},{"src":"img/casa-atlamaya-06.jpg","w":629,"h":606,"etiqueta":"DESPUÉS","pie":"Recámara","pos":""}],"recorrido":null},{"id":"verificentro","num":"06","nombre":"Verificentro Gobernadores","sector":"publica","sectorNombre":"Obra pública y salud","tipo":"Remodelación de centro de verificación","ubicacion":"Cuernavaca, Morelos","servicio":"Remodelación y obra civil","alcance":"Accesos, techumbre, islas y líneas de verificación","descripcion":"Remodelación completa del inmueble: fachada, accesos con rampa, techumbre metálica y área de verificación.","portada":{"src":"img/verificentro-portada.jpg","w":1280,"h":720,"pos":""},"mini":{"src":"img/verificentro-mini.jpg","w":360,"h":203,"pos":""},"fotos":[{"src":"img/verificentro-01.jpg","w":1032,"h":774,"etiqueta":"ANTES","pie":"Predio al inicio de los trabajos","pos":""},{"src":"img/verificentro-02.jpg","w":1280,"h":960,"etiqueta":"PROCESO","pie":"Estructura de la techumbre","pos":""},{"src":"img/verificentro-03.jpg","w":1024,"h":768,"etiqueta":"DESPUÉS","pie":"Líneas de verificación terminadas","pos":""}],"recorrido":null},{"id":"casa-pedregal","num":"07","nombre":"Casa Pedregal","sector":"vivienda","sectorNombre":"Vivienda","tipo":"Proyecto residencial con énfasis en interiores","ubicacion":"Ciudad de México","servicio":"Diseño y construcción","alcance":"Interiores, acabados y carpintería","descripcion":"Vivienda con énfasis en el diseño interior: estancia, recámara y detalles de carpintería en tonos oscuros y neutros.","portada":{"src":"img/casa-pedregal-portada.jpg","w":678,"h":628,"pos":""},"mini":{"src":"img/casa-pedregal-mini.jpg","w":360,"h":333,"pos":""},"fotos":[{"src":"img/casa-pedregal-01.jpg","w":760,"h":732,"etiqueta":"ESTANCIA","pie":"Sala con acabados en tonos neutros","pos":""},{"src":"img/casa-pedregal-02.jpg","w":458,"h":441,"etiqueta":"DETALLE","pie":"Interiores en tonos oscuros","pos":""},{"src":"img/casa-pedregal-03.jpg","w":475,"h":457,"etiqueta":"CARPINTERÍA","pie":"Puerta y herrajes","pos":""}],"recorrido":null},{"id":"hospital-mujer","num":"08","nombre":"Hospital de la Mujer","sector":"publica","sectorNombre":"Obra pública y salud","tipo":"Rehabilitación de fachadas e interiores","ubicacion":"Yautepec, Morelos","servicio":"Rehabilitación y mantenimiento","alcance":"Fachadas, reparación de muros, plafones y pintura","descripcion":"Trabajos de rehabilitación en el exterior y el interior del hospital, con registro del estado inicial y final.","portada":{"src":"img/hospital-mujer-portada.jpg","w":1280,"h":960,"pos":""},"mini":{"src":"img/hospital-mujer-mini.jpg","w":360,"h":270,"pos":""},"fotos":[{"src":"img/hospital-mujer-01.jpg","w":720,"h":1280,"etiqueta":"ANTES","pie":"Daño en muro","pos":""},{"src":"img/hospital-mujer-02.jpg","w":1280,"h":960,"etiqueta":"DESPUÉS","pie":"Fachada rehabilitada","pos":""},{"src":"img/hospital-mujer-03.jpg","w":864,"h":1152,"etiqueta":"DESPUÉS","pie":"Pasillo interior","pos":""}],"recorrido":null},{"id":"hospital-temixco","num":"09","nombre":"Hospital General de Temixco","sector":"publica","sectorNombre":"Obra pública y salud","tipo":"Rehabilitación de fachada y accesos","ubicacion":"Temixco, Morelos","servicio":"Rehabilitación y mantenimiento","alcance":"Fachada, letrero, acceso principal y pintura","descripcion":"Hospital General «Enf. María de la Luz Delgado Morales»: rehabilitación de la fachada y del acceso principal.","portada":{"src":"img/hospital-temixco-portada.jpg","w":1280,"h":589,"pos":""},"mini":{"src":"img/hospital-temixco-mini.jpg","w":360,"h":165,"pos":""},"fotos":[{"src":"img/hospital-temixco-01.jpg","w":1280,"h":960,"etiqueta":"ANTES","pie":"Letrero de fachada","pos":""},{"src":"img/hospital-temixco-02.jpg","w":1280,"h":960,"etiqueta":"DESPUÉS","pie":"Acceso principal","pos":""},{"src":"img/hospital-temixco-03.jpg","w":1280,"h":960,"etiqueta":"DESPUÉS","pie":"Escalinata y rampa","pos":""}],"recorrido":null},{"id":"calle-5-de-mayo","num":"10","nombre":"Calle 5 de Mayo","sector":"urbanizacion","sectorNombre":"Urbanización y obra civil","tipo":"Repavimentación con concreto hidráulico","ubicacion":"Jiutepec, Morelos","servicio":"Construcción · obra pública","alcance":"Pavimento, guarniciones y banquetas","descripcion":"Repavimentación de la calle 5 de Mayo con concreto hidráulico: nuevo arroyo vehicular, guarniciones pintadas, banquetas y registros.","portada":{"src":"img/calle-5-de-mayo-portada.jpg","w":1334,"h":1235,"pos":""},"mini":{"src":"img/calle-5-de-mayo-mini.jpg","w":360,"h":333,"pos":""},"fotos":[{"src":"img/calle-5-de-mayo-01.jpg","w":1334,"h":1235,"etiqueta":"Pavimento de concreto hidráulico","pie":"Pavimento, guarniciones y banquetas","pos":""}],"recorrido":null},{"id":"jardin-juarez","num":"11","nombre":"Jardín Juárez","sector":"urbanizacion","sectorNombre":"Urbanización y obra civil","tipo":"Red de aguas negras","ubicacion":"Jiutepec, Morelos","servicio":"Construcción · obra pública","alcance":"Excavación, tubería y relleno","descripcion":"Instalación de la red de aguas negras en Jardín Juárez: excavación de zanja con maquinaria, colocación de tubería de gran diámetro y relleno compactado.","portada":{"src":"img/jardin-juarez-portada.jpg","w":1400,"h":1296,"pos":""},"mini":{"src":"img/jardin-juarez-mini.jpg","w":360,"h":333,"pos":""},"fotos":[{"src":"img/jardin-juarez-01.jpg","w":1600,"h":1039,"etiqueta":"SUMINISTRO","pie":"Tubería corrugada de gran diámetro en sitio","pos":""},{"src":"img/jardin-juarez-02.jpg","w":1600,"h":1039,"etiqueta":"INSTALACIÓN","pie":"Colocación de tubería en zanja con retroexcavadora","pos":""}],"recorrido":null},{"id":"las-torres","num":"12","nombre":"Las Torres","sector":"urbanizacion","sectorNombre":"Urbanización y obra civil","tipo":"Acceso y salida de puente vehicular","ubicacion":"Chimalhuacán, Edo. Méx. · Circuito Exterior","servicio":"Construcción vial","alcance":"Levantamiento, revisión de proyecto y seguridad","descripcion":"Proyecto Las Torres: trabajos del carril de acceso y salida del puente Chimalhuacán en el Circuito Exterior Mexiquense, con levantamiento topográfico, revisión del proyecto y control de seguridad.","portada":{"src":"img/las-torres-portada.jpg","w":1128,"h":1046,"pos":""},"mini":{"src":"img/las-torres-mini.jpg","w":360,"h":334,"pos":""},"fotos":[{"src":"img/las-torres-01.jpg","w":856,"h":1141,"etiqueta":"SECCIÓN","pie":"Estructura de pavimento del proyecto","pos":""},{"src":"img/las-torres-02.jpg","w":856,"h":1141,"etiqueta":"GEOMETRÍA","pie":"Trazo del carril de acceso y salida","pos":""},{"src":"img/las-torres-03.jpg","w":1070,"h":615,"etiqueta":"SEGURIDAD","pie":"Auditoría del nivel de seguridad en el trabajo","pos":""}],"recorrido":null},{"id":"sanofi-proyecto-azteca","num":"13","nombre":"Sanofi · Proyecto Azteca","sector":"urbanizacion","sectorNombre":"Urbanización y obra civil","tipo":"Demolición y cimentación","ubicacion":"Cuautitlán Izcalli, Estado de México","servicio":"Construcción","alcance":"Demolición, plataforma, excavación y cimbra","descripcion":"Proyecto Azteca, planta de vacunas: demolición de estructuras anteriores, mejoramiento de plataforma, excavación de zapatas y cimbrado, con permisos de trabajo y uso de EPP.","portada":{"src":"img/sanofi-proyecto-azteca-portada.jpg","w":1400,"h":1296,"pos":""},"mini":{"src":"img/sanofi-proyecto-azteca-mini.jpg","w":360,"h":333,"pos":""},"fotos":[{"src":"img/sanofi-proyecto-azteca-01.jpg","w":1288,"h":1140,"etiqueta":"DEMOLICIÓN","pie":"Demolición de muros de block con maquinaria","pos":""},{"src":"img/sanofi-proyecto-azteca-02.jpg","w":1288,"h":1140,"etiqueta":"MAQUINARIA","pie":"Retroexcavadora en el retiro de muros y firmes","pos":""},{"src":"img/sanofi-proyecto-azteca-03.jpg","w":853,"h":641,"etiqueta":"SEGURIDAD","pie":"Revisión de permiso de trabajo en sitio","pos":""},{"src":"img/sanofi-proyecto-azteca-04.jpg","w":856,"h":1141,"etiqueta":"CIMENTACIÓN","pie":"Excavación y cimbrado de zapatas","pos":""},{"src":"img/sanofi-proyecto-azteca-05.jpg","w":869,"h":484,"etiqueta":"PLATAFORMA","pie":"Mejoramiento de plataforma con maquinaria","pos":""},{"src":"img/sanofi-proyecto-azteca-06.jpg","w":867,"h":484,"etiqueta":"COMPACTACIÓN","pie":"Compactación verificada en sitio","pos":""}],"recorrido":null},{"id":"loligas","num":"14","nombre":"Loligas","sector":"urbanizacion","sectorNombre":"Urbanización y obra civil","tipo":"Excavación para tanques y nivelación","ubicacion":"Tlaxcala","servicio":"Construcción","alcance":"Trazo, nivelación y excavación para tanques","descripcion":"Proyecto Loligas: trazo y nivelación del terreno y excavación para el alojamiento de tanques de combustible, con maquinaria pesada.","portada":{"src":"img/loligas-portada.jpg","w":1041,"h":964,"pos":""},"mini":{"src":"img/loligas-mini.jpg","w":360,"h":333,"pos":""},"fotos":[{"src":"img/loligas-01.jpg","w":1041,"h":690,"etiqueta":"TRAZO Y NIVELACIÓN","pie":"Trazo con cal y nivelación del terreno con maquinaria","pos":""},{"src":"img/loligas-02.jpg","w":856,"h":1141,"etiqueta":"EXCAVACIÓN","pie":"Fosa para tanques de combustible","pos":""}],"recorrido":null},{"id":"club-51","num":"15","nombre":"Hotel Boutique Club 51","sector":"diseno","sectorNombre":"Diseño","tipo":"Proyecto arquitectónico de 28 suites","ubicacion":"Torre Mayor, Ciudad de México","servicio":"Proyecto arquitectónico e interiores","alcance":"28 suites en 1,992 m²","descripcion":"Distribución de 14 suites estándar, 10 master y 4 dobles, con recepción, circulaciones y áreas de servicio.","portada":{"src":"img/club-51-portada.jpg","w":1267,"h":1400,"pos":"50% 100%"},"mini":{"src":"img/club-51-mini.jpg","w":326,"h":360,"pos":"50% 100%"},"fotos":[{"src":"img/club-51-01.jpg","w":1280,"h":682,"etiqueta":"ZONIFICACIÓN","pie":"Distribución de los tres tipos de suite","pos":""},{"src":"img/club-51-02.jpg","w":1600,"h":800,"etiqueta":"SUITE ESTÁNDAR","pie":"Planta amueblada de 30.68 m²","pos":""},{"src":"img/club-51-03.jpg","w":1600,"h":1549,"etiqueta":"SUITE MASTER","pie":"Axonométrico con terraza y jacuzzi","pos":""}],"recorrido":null},{"id":"conjunto-tecuezcontitla","num":"16","nombre":"Conjunto habitacional Tecuezcontitla","sector":"diseno","sectorNombre":"Diseño","tipo":"Anteproyecto de conjunto habitacional","ubicacion":"Tepoztlán, Morelos","servicio":"Anteproyecto arquitectónico","alcance":"Conjunto habitacional","descripcion":"Anteproyecto de conjunto habitacional en un predio de 9,224 m² sobre la carretera Tepoztlán–Cuernavaca, con un área de proyecto de 7,171 m².","portada":{"src":"img/conjunto-tecuezcontitla-portada.jpg","w":1024,"h":690,"pos":""},"mini":{"src":"img/conjunto-tecuezcontitla-mini.jpg","w":360,"h":243,"pos":""},"fotos":[{"src":"img/conjunto-tecuezcontitla-01.jpg","w":1024,"h":690,"etiqueta":"TERRENO","pie":"Predio de 9,224 m² con vista a la sierra de Tepoztlán","pos":""},{"src":"img/conjunto-tecuezcontitla-02.jpg","w":1600,"h":1200,"etiqueta":"ÁREA DE PROYECTO","pie":"Polígono de 7,171 m² dentro del predio","pos":""}],"recorrido":null},{"id":"condominios-y-departamentos","num":"17","nombre":"Condominios y departamentos","sector":"diseno","sectorNombre":"Diseño","tipo":"Proyectos arquitectónicos de vivienda multifamiliar","ubicacion":"","servicio":"Proyecto arquitectónico","alcance":"Departamentos Jardín del Campestre, Departamentos Habitus y Privada San Ángel","descripcion":"Proyectos arquitectónicos de vivienda multifamiliar: dos edificios de departamentos y una privada residencial.","portada":{"src":"img/condominios-y-departamentos-portada.jpg","w":960,"h":540,"pos":"33% 50%"},"mini":{"src":"img/condominios-y-departamentos-mini.jpg","w":360,"h":203,"pos":"33% 50%"},"fotos":[{"src":"img/condominios-y-departamentos-01.jpg","w":960,"h":540,"etiqueta":"DEPARTAMENTOS JARDÍN DEL CAMPESTRE","pie":"Edificio de departamentos","pos":"33% 50%"},{"src":"img/condominios-y-departamentos-02.jpg","w":1271,"h":695,"etiqueta":"DEPARTAMENTOS HABITUS","pie":"Edificio de departamentos","pos":"43% 50%"},{"src":"img/condominios-y-departamentos-03.jpg","w":1272,"h":636,"etiqueta":"PRIVADA SAN ÁNGEL","pie":"Privada residencial","pos":"10% 50%"}],"recorrido":null},{"id":"usos-mixtos-corporativo-y-salud","num":"18","nombre":"Usos mixtos, corporativo y salud","sector":"diseno","sectorNombre":"Diseño","tipo":"Proyectos arquitectónicos de edificios de mayor escala","ubicacion":"","servicio":"Proyecto arquitectónico","alcance":"Usos Mixtos PAR 3, Corporativo Cuesta Bonita y Médica Satélite","descripcion":"Proyectos arquitectónicos de edificios de mayor escala: una propuesta de torres de usos mixtos, un edificio corporativo y un edificio médico.","portada":{"src":"img/usos-mixtos-corporativo-y-salud-portada.jpg","w":1218,"h":609,"pos":"35% 50%"},"mini":{"src":"img/usos-mixtos-corporativo-y-salud-mini.jpg","w":360,"h":180,"pos":"35% 50%"},"fotos":[{"src":"img/usos-mixtos-corporativo-y-salud-01.jpg","w":1218,"h":609,"etiqueta":"USOS MIXTOS PAR 3","pie":"Propuesta de torres de usos mixtos","pos":"35% 50%"},{"src":"img/usos-mixtos-corporativo-y-salud-02.jpg","w":981,"h":600,"etiqueta":"CORPORATIVO CUESTA BONITA","pie":"Edificio corporativo · 2015","pos":"62% 50%"},{"src":"img/usos-mixtos-corporativo-y-salud-03.jpg","w":1061,"h":640,"etiqueta":"MÉDICA SATÉLITE","pie":"Edificio médico","pos":"62% 50%"}],"recorrido":null}]</script>
 <script>
 (() => {
   const OBRAS = JSON.parse(document.getElementById('datos-obras').textContent);
@@ -625,11 +803,11 @@ dialog.ficha::backdrop { background: rgba(15, 28, 46, .72); }
     if (vistaImg.getAttribute('src') !== o.portada.src) {
       vistaImg.style.opacity = '0.25';
       const pre = new Image();
-      pre.onload = pre.onerror = () => { vistaImg.src = o.portada.src; vistaImg.style.opacity = '1'; };
+      pre.onload = pre.onerror = () => { vistaImg.src = o.portada.src; vistaImg.style.objectPosition = o.portada.pos || ''; vistaImg.style.opacity = '1'; };
       pre.src = o.portada.src;
     }
     vistaSector.textContent = o.sectorNombre;
-    vistaTexto.textContent = o.nombre + ' · ' + o.ubicacion;
+    vistaTexto.textContent = o.nombre + (o.ubicacion ? ' · ' + o.ubicacion : '');
   }
   filas.forEach((f) => {
     const a = f.querySelector('a');
@@ -666,10 +844,32 @@ dialog.ficha::backdrop { background: rgba(15, 28, 46, .72); }
     });
     const gal = $('ficha-galeria');
     gal.replaceChildren();
+    gal.dataset.n = o.fotos.length;
     o.fotos.forEach((f) => {
       const img = crear('img', { src: f.src, width: f.w, height: f.h, alt: (f.pie || o.nombre), loading: 'lazy', decoding: 'async' });
+      if (f.pos) img.style.objectPosition = f.pos;
       gal.append(crear('figure', {}, [img, crear('figcaption', {}, [crear('strong', { textContent: f.etiqueta }), crear('span', { textContent: f.pie })])]));
     });
+    // recorrido aéreo en video (solo las obras que lo traen)
+    const rec = $('ficha-recorrido'), r = o.recorrido;
+    rec.replaceChildren();
+    rec.hidden = !r;
+    if (r) {
+      rec.append(
+        crear('img', { src: r.foto.src, width: r.foto.w, height: r.foto.h, alt: r.alt || r.titulo, loading: 'lazy', decoding: 'async' }),
+        crear('div', { className: 'recorrido-texto' }, [
+          crear('p', { className: 'ceja', textContent: 'Recorrido aéreo' }),
+          crear('h4', { textContent: r.titulo }),
+          crear('p', { textContent: r.texto }),
+          crear('p', { className: 'recorrido-fecha', textContent: r.fecha }),
+          crear('a', { className: 'boton', href: r.url, target: '_blank', rel: 'noopener', textContent: 'Ver el recorrido en video' }),
+        ]),
+        crear('figure', { className: 'recorrido-qr' }, [
+          crear('img', { src: r.qr, width: 820, height: 820, alt: 'Código QR del recorrido aéreo en video', loading: 'lazy' }),
+          crear('figcaption', { textContent: 'O escanee el código con la cámara del teléfono' }),
+        ]),
+      );
+    }
     const lista = visibles().length ? visibles() : OBRAS.map((x) => x.id);
     const i = Math.max(0, lista.indexOf(id));
     const ant = porId[lista[(i - 1 + lista.length) % lista.length]], sig = porId[lista[(i + 1) % lista.length]];
