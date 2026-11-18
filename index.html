@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"GeneralContractor","name":"ADCO Arquitectos","legalName":"Corporativo de Servicios en Arquitectura y Construcción ADCO, S.A. de C.V.","url":"https://guzmansyhair-a11y.github.io/adco-arquitectos/","logo":"https://guzmansyhair-a11y.github.io/adco-arquitectos/img/logo-adco-azul.png","image":"https://guzmansyhair-a11y.github.io/adco-arquitectos/img/compartir.jpg","telephone":"+52 777 511 4267","email":"alonzo@adcoarquitectos.com","address":{"@type":"PostalAddress","streetAddress":"Prolongación Miguel Hidalgo 198, Col. Chamilpa","addressLocality":"Cuernavaca","addressRegion":"Morelos","postalCode":"62210","addressCountry":"MX"},"areaServed":["Ciudad de México","Morelos","Estado de México","Tlaxcala"],"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Conjuntos habitacionales y condominios","description":"Proyecto y construcción de vivienda en conjunto; proyecto arquitectónico de edificios de departamentos, privadas residenciales y usos mixtos."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Urbanización y obra civil","description":"Pavimentos de concreto hidráulico, guarniciones, banquetas, redes de drenaje sanitario, terracerías, excavaciones y cimentaciones."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Renta de generadores eléctricos","description":"Generadores de 900 W, 3000 W, 4000 W y 5000 W en renta para obras, eventos y trabajos sin suministro de energía."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"GeneralContractor","name":"ADCO Arquitectos","legalName":"Corporativo de Servicios en Arquitectura y Construcción ADCO, S.A. de C.V.","url":"https://guzmansyhair-a11y.github.io/adco-arquitectos/","logo":"https://guzmansyhair-a11y.github.io/adco-arquitectos/img/logo-adco-azul.png","image":"https://guzmansyhair-a11y.github.io/adco-arquitectos/img/compartir.jpg","telephone":"+52 777 511 4267","email":"alonzo@adcoarquitectos.com","address":{"@type":"PostalAddress","streetAddress":"Prolongación Miguel Hidalgo 198, Col. Chamilpa","addressLocality":"Cuernavaca","addressRegion":"Morelos","postalCode":"62210","addressCountry":"MX"},"areaServed":["Ciudad de México","Morelos","Estado de México","Tlaxcala"],"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Conjuntos habitacionales y condominios","description":"Proyecto y construcción de vivienda en conjunto; proyecto arquitectónico de edificios de departamentos, privadas residenciales y usos mixtos."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Urbanización y obra civil","description":"Pavimentos de concreto hidráulico, guarniciones, banquetas, redes de drenaje sanitario, terracerías, excavaciones y cimentaciones."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Renta de generadores eléctricos","description":"Generadores de 900 W, 3000 W, 4000 W y 5000 W en renta para obras, eventos y trabajos sin suministro de energía."}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Renta de andamios","description":"Andamios pequeños en renta, ideales para trabajos en banqueta; de fácil movilidad, con ruedas con freno."}}]}</script>
 <style>
 :root {
   /* Retícula de 12 columnas · índice tipográfico de obras con vista previa fija · corte diagonal del logotipo ADCO en fotos y bandas */
@@ -137,7 +137,7 @@ p { margin: 0; }
 .eco li { display: grid; gap: .25rem; border-top: 1px solid var(--regla); padding-top: .8rem; }
 .eco li strong { font-weight: 600; font-size: .98rem; }
 .eco li span { color: var(--gris); font-size: .9rem; line-height: 1.5; }
-/* ---------- renta de generadores */
+/* ---------- renta de equipo: generadores y andamios */
 .renta { margin-top: 1.2rem; background: var(--papel); border: 1px solid var(--regla); padding: clamp(1.4rem, 3vw, 2.2rem); display: grid; grid-template-columns: repeat(12, 1fr); gap: 1.6rem clamp(1rem, 3vw, 2.5rem); scroll-margin-top: 6rem; }
 .renta-texto { grid-column: 1 / span 5; display: grid; gap: .9rem; align-content: start; }
 .renta-texto h3 { font-size: 1.85rem; }
@@ -151,6 +151,14 @@ p { margin: 0; }
 .renta-equipo strong { font-weight: 600; font-size: 1rem; }
 .renta-equipo small { color: var(--gris); font-size: .88rem; }
 .renta-cant { font: 600 .75rem/1.2 var(--texto); letter-spacing: .14em; text-transform: uppercase; color: var(--acero); white-space: nowrap; }
+.renta-puntos { list-style: none; margin: .2rem 0 0; padding: 0; border-top: 1px solid var(--tinta); }
+.renta-puntos li { display: grid; gap: .15rem; padding: .8rem 0; border-bottom: 1px solid var(--regla); }
+.renta-puntos strong { font-weight: 600; font-size: 1rem; color: var(--tinta); }
+.renta-puntos span { color: var(--gris); font-size: .92rem; }
+.renta-fotos { grid-column: 6 / span 7; display: grid; grid-template-columns: minmax(0, 1.75fr) minmax(0, 1fr); gap: .7rem; align-self: stretch; }
+.renta-fotos figure { margin: 0; display: grid; grid-template-rows: minmax(0, 1fr) auto; gap: .5rem; }
+.renta-fotos img { width: 100%; height: 100%; min-height: 20rem; object-fit: cover; background: var(--piedra); }
+.renta-fotos figcaption { font: 600 .72rem/1.2 var(--texto); letter-spacing: .14em; text-transform: uppercase; color: var(--acero); }
 
 /* ---------- proceso */
 .proceso { background: var(--tinta); color: var(--papel); }
@@ -288,7 +296,8 @@ dialog.ficha::backdrop { background: rgba(15, 28, 46, .72); }
   .fila-flecha { display: none; }
   .servicios-lista { grid-template-columns: 1fr; }
   .eco ul { grid-template-columns: repeat(2, 1fr); }
-  .renta-texto, .renta-equipos { grid-column: 1 / -1; }
+  .renta-texto, .renta-equipos, .renta-fotos { grid-column: 1 / -1; }
+  .renta-fotos img { min-height: 0; height: 17rem; }
   .pasos { grid-template-columns: repeat(2, 1fr); row-gap: 2rem; }
   .proceso-nota figure, .proceso-nota p { grid-column: 1 / -1; }
   .proceso-nota p { margin-top: 1.5rem; }
@@ -305,6 +314,9 @@ dialog.ficha::backdrop { background: rgba(15, 28, 46, .72); }
   .eco ul, .pasos, .mision, .galeria { grid-template-columns: 1fr; }
   .renta-equipos li { grid-template-columns: 1fr auto; }
   .renta-w { grid-column: 1 / -1; }
+  .renta-fotos { grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); }
+  .renta-fotos img { height: 13rem; }
+  .renta-fotos figcaption { letter-spacing: .1em; }
   .pie p:last-child { margin-left: 0; }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -638,6 +650,24 @@ dialog.ficha::backdrop { background: rgba(15, 28, 46, .72); }
           <li><span class="renta-w">5000 W</span><span class="renta-equipo"><strong>Generador</strong></span><span class="renta-cant">1 equipo</span></li>
         </ul>
       </div>
+      <div class="renta" id="renta-andamios" aria-labelledby="titulo-andamios">
+        <div class="renta-texto">
+          <p class="ceja">Renta de equipo</p>
+          <h3 id="titulo-andamios">Renta de andamios</h3>
+          <p>Contamos con andamios pequeños en renta para trabajos en banqueta.</p>
+          <ul class="renta-puntos" aria-label="Características de los andamios en renta">
+            <li><strong>Ideales para banqueta</strong><span>Andamios pequeños para fachadas y trabajos a poca altura.</span></li>
+            <li><strong>De fácil movilidad</strong><span>Ruedas con freno para desplazarlos a lo largo de la banqueta.</span></li>
+            <li><strong>Por cuerpos</strong><span>Cuerpos de andamio con tijeras y tablones, según la altura de trabajo.</span></li>
+          </ul>
+          <p class="renta-nota">Renta sujeta a disponibilidad. La cotización se realiza de acuerdo con el número de cuerpos y el periodo de renta.</p>
+          <a class="boton boton-lleno" href="https://wa.me/527775114267?text=Hola%2C%20me%20interesa%20la%20renta%20de%20andamios%20de%20ADCO.%0A%0ANombre%3A%20%0AN%C3%BAmero%20de%20cuerpos%20o%20altura%20de%20trabajo%3A%20%0AFechas%20de%20renta%3A%20%0ALugar%20de%20uso%3A%20%0A%0A%C2%BFMe%20apoyan%20con%20la%20cotizaci%C3%B3n%20y%20la%20disponibilidad%2C%20por%20favor%3F" rel="noopener">Solicitar cotización por WhatsApp</a>
+        </div>
+        <div class="renta-fotos">
+          <figure><img src="img/renta-andamio-fachada.jpg" width="1400" height="788" alt="Andamio armado junto a una fachada en obra" loading="lazy" decoding="async" style="object-position: 85% 50%"><figcaption>En fachada</figcaption></figure>
+          <figure><img src="img/renta-andamio-interior.jpg" width="563" height="1000" alt="Andamio armado en un interior, con tijeras y tablón" loading="lazy" decoding="async" style="object-position: 50% 30%"><figcaption>En interiores</figcaption></figure>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -745,6 +775,7 @@ dialog.ficha::backdrop { background: rgba(15, 28, 46, .72); }
             <option>Obra pública o institucional</option>
             <option>Urbanización u obra civil</option>
             <option>Renta de generadores</option>
+            <option>Renta de andamios</option>
             <option>Otro</option>
           </select>
         </div>
@@ -906,7 +937,8 @@ dialog.ficha::backdrop { background: rgba(15, 28, 46, .72); }
   const form = $('formulario'), enviar = $('f-enviar');
   function armar() {
     const nombre = $('f-nombre').value.trim(), tipo = $('f-tipo').value, msg = $('f-mensaje').value.trim();
-    const interes = tipo === 'Renta de generadores' ? 'Me interesa la renta de un generador.' : 'Me interesa un proyecto de ' + tipo.toLowerCase() + '.';
+    const RENTAS = { 'Renta de generadores': 'Me interesa la renta de un generador.', 'Renta de andamios': 'Me interesa la renta de andamios.' };
+    const interes = RENTAS[tipo] || 'Me interesa un proyecto de ' + tipo.toLowerCase() + '.';
     const texto = ['Hola, ' + (nombre ? 'soy ' + nombre + '. ' : '') + interes, msg].filter(Boolean).join(' ');
     enviar.href = 'https://wa.me/527775114267?text=' + encodeURIComponent(texto);
   }
